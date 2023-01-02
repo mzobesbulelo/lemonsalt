@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+.nav{
+    padding: 15px 170px;
+    font-size: 30px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover{
+    color: rgb(63, 197, 141);
+}
+
+
+.greetings{
+    margin: 50px;
+    padding: 0 100px;
+}
+
+.sbulelo-img-div{
+    display: inline-block;
+    width: 400px;
+}
+
+#sbulelo-img{
+    width: 100%;
+}
+
+.sbulelo-img-text{
+    display: inline-block;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -50px;
+    width: 650px;
+
+}
+
+.sbulelo-img-text span{
+    font-size: 80px;
+}
+
+.sbulelo-img-text span b{
+    font-weight: normal;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-color: rgb(63, 197, 141);;
+}
+
+.sbulelo-img-text i{
+    font-style: normal;
+    line-height: 25px;
+}
+
+button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    color: rgb(63, 197, 141);
+}
+
+#meeting{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: bold;
+    color: rgb(63, 197, 141);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+#meeting:focus{
+    animation-name: googlemeet;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes googlemeet{
+    0% {colour:rgb(63, 197, 141)}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    100% {color: red;}
+}
+
+.tooltip-google-meet{
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    background-color: rgb(14, 14, 14);
+    padding: 15px 25px;
+    position: absolute;
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+}
+
+.tooltip-google-meet ol{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.tooltip-google-meet u{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.tooltip-google-meet i{
+    text-decoration: underline;
+    text-decoration-color: rgb(63, 197, 141);
+    text-underline-offset: 3px;
+}
+
+#meeting:hover .tooltip-google-meet{
+    display: block;
+    transition: 2s;
+}
+
+#meeting .tooltip-google-meet{
+    display: none;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 50px;
+    text-align: center;
+    border-top: 2px white solid;
+    margin: 0 100px;
+    padding: 50px 0;
+}
+
+.skills b{
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+

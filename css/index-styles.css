@@ -1,0 +1,440 @@
+@media (min-width:250px){
+
+
+  body{
+      margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: rgb(131, 157, 183);
+    }
+
+  .nav{
+      background-color: rgb(62, 76, 94);
+		  padding-top: 20px;
+		  padding-bottom: 20px;
+      text-align: center;
+      font-size: 30px;
+      color: rgb(131, 157, 183);
+		  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		  cursor: pointer;
+    }
+
+	.nav a{
+		color:rgb(131, 157, 183);
+		text-decoration: none;	}
+
+	.nav span{
+		font-size: 24px;
+	}
+
+	.spray-img{
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.homeview{
+		position: relative;
+		height: 300px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo-homeview{
+		position: absolute;
+		width: 150px;
+		top: 80px;
+	}
+
+	.gradient{
+		background-image: linear-gradient(rgb(74, 140, 169),rgb(131, 157, 183));
+		height: 20px;
+	}
+
+	.our-products{
+		color: white;
+		background-color: rgb(62, 76, 94);
+		font-size: 15px;
+		line-height: 40px;
+		padding: 25px;
+		border-radius: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+
+	.our-products p{
+		margin: 0;
+	}
+
+	.paperspray-img-div{
+		width: 100%;
+		height: 250px;
+	}
+
+	.paperspray-img{
+		position: relative;
+		display: block;
+		object-fit: cover;
+		border-radius: 15px;
+		margin-top: 10px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.our-products span{
+		color: rgb(131, 157, 183);
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.our-products ul{
+		list-style-type: square;
+	}
+
+	.our-products-2{
+		display: none;
+	}
+
+	.about-us{
+		color: white;
+		background-color: rgb(62, 76, 94);
+		font-size: 15px;
+		line-height: 30px;
+		padding: 25px;
+		border-radius: 20px;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.about-us span{
+		color: rgb(131, 157, 183);
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.services-img-div{
+		width: 100%;
+		height: 250px;
+	}
+
+	.services-img{
+		position: relative;
+		display: block;
+		object-fit: cover;
+		border-radius: 15px;
+		margin-top: 10px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.our-services{
+		color: white;
+		background-color: rgb(62, 76, 94);
+		font-size: 15px;
+		line-height: 40px;
+		padding: 25px;
+		border-radius: 20px;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.our-services p{
+		line-height: 25px;
+	}
+
+	.our-services span{
+		color: rgb(131, 157, 183);
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.our-services li span{
+		color: rgb(131, 157, 183);
+		font-size: 15px;
+	}
+
+	.our-services-2{
+		display: none;
+	}
+
+	.mission-vision-values{
+		display: grid;
+		grid-template-columns: 1fr;
+		background-color: rgb(62, 76, 94);
+		border-radius: 20px;
+		margin-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		text-align: left;
+	}
+
+	.mission{
+		color: white;
+		background-color: rgb(131, 157, 183);
+		font-size: 15px;
+		line-height: 25px;
+		border-radius: 20px;
+		margin-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.vision{
+		color: white;
+		background-color: rgb(131, 157, 183);
+		font-size: 15px;
+		line-height: 25px;
+		border-radius: 20px;
+		margin-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.values{
+		color: white;
+		background-color: rgb(131, 157, 183);
+		font-size: 15px;
+		line-height: 25px;
+		border-radius: 20px;
+		margin-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.mission span{
+		color: rgb(62, 76, 94);
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.vision span{
+		color: rgb(62, 76, 94);
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.values span{
+		color: rgb(62, 76, 94);
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.health-page{
+		margin: 20px 10px 20px 10px;
+		padding: 20px;
+		background-color: rgb(62, 76, 94);
+		border-radius: 20px;
+		color: white;
+	}
+
+	.health-page b{
+		color: rgb(131, 157, 183);
+		text-decoration: underline;
+	}
+
+	.health-page button{
+		font-size: 25px;
+		padding: 10px 20px 10px 20px;
+		border-radius: 20px;
+		border-color: yellow;
+		border-style: solid;
+		color: yellow;
+		background-color: rgb(131, 157, 183);
+		cursor: pointer;
+	}
+
+	.health-page button:hover{
+		opacity: 0.7;
+	}
+
+	.health-page button:active{
+		background-color: yellow;
+		color: black;
+	}
+
+	.logo-quote{
+		display: block;
+		width: 150px;
+	}
+
+	.quote{
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		padding-top: 50px;
+		background-color: rgb(131, 157, 183);
+		padding: 20px;
+	}
+
+	.quote-text{
+		text-align: center;
+		color: white;
+	}
+
+	.quote-text span{
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	.footer{
+		font-size: 15px;
+		background-color: rgb(72, 93, 122);
+		color: rgb(131, 157, 183);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	.footer span{
+		color: rgb(131, 157, 183);
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.footer a{
+		text-decoration: none;
+	}
+
+	.footer b{
+        color: white;
+        font-weight: normal;
+      }
+
+
+}
+
+@media (min-width:769px){
+	.our-products{
+		display: none;
+	}
+
+	.our-products-2{
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		color: white;
+		background-color: rgb(62, 76, 94);
+		font-size: 15px;
+		line-height: 40px;
+		padding: 25px;
+		border-radius: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		padding-bottom: 40px;
+	}
+
+	.our-products-2 p{
+		margin: 0;
+	}
+
+	.paperspray-img-div-2{
+		width: 100%;
+		height: 100%;
+	}
+
+	.paperspray-img-2{
+		position: relative;
+		display: block;
+		object-fit: cover;
+		border-radius: 15px;
+		margin-top: 10px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.our-products-2 span{
+		color: rgb(131, 157, 183);
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.our-products-2 ul{
+		list-style-type: square;
+	}
+
+	.our-products-list-2{
+		margin-left: 30px;
+	}
+
+	.our-services{
+		display: none;
+	}
+
+	.services-img-div-2{
+		width: 100%;
+		height: 100%;
+	}
+
+	.services-img-2{
+		position: relative;
+		display: block;
+		object-fit: cover;
+		border-radius: 15px;
+		margin-top: 10px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.our-services-2{
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		color: white;
+		background-color: rgb(62, 76, 94);
+		font-size: 15px;
+		line-height: 40px;
+		padding: 25px;
+		border-radius: 20px;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.our-services-2 p{
+		line-height: 25px;
+	}
+
+	.our-services-2 span{
+		color: rgb(131, 157, 183);
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.our-services-2 li span{
+		color: rgb(131, 157, 183);
+		font-size: 15px;
+	}
+
+	.our-services-list-2{
+		margin-right: 30px;
+	}
+
+	.mission-vision-values{
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-top: 0;
+	}
+
+	
+}
+
+@media (min-width:1200px){
+	.page-wrap{
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+	}
+
+	.health-page{
+		width: 40%;
+	}
+
+	.bottom-border{
+		border-top: 2px solid white;
+	}
+}
