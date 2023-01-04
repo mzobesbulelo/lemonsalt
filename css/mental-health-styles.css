@@ -61,7 +61,7 @@
 
       .company-summary{
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 3fr 1fr;
       }
 
       .company-summary-img-div{
@@ -69,7 +69,7 @@
       }
 
       .company-summary-text{
-        background-color: rgb(244, 193, 114);
+        background-color: rgb(202, 202, 202);
         padding: 20px;
         font-size: 15px;
       }
@@ -86,7 +86,6 @@
 
       .company-summary b{
         font-size: 20px;
-        text-decoration: underline;
       }
 
       .company-summary-2{
@@ -95,13 +94,15 @@
 
       .our-services{
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr 3fr;
+        margin-top: 10px;
       }
 
       .our-services-img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: 35%;
       }
 
       .our-services-text{
@@ -113,7 +114,6 @@
 
       .our-services b{
         font-size: 20px;
-        text-decoration: underline;
       }
 
       .our-services-text ul{
@@ -124,11 +124,12 @@
 
       .mission-vision-values{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 10px;
         padding: 10px;
         text-align: center;
         line-height: 25px;
+        row-gap: 10px;
       }
 
       .mission{
@@ -220,6 +221,15 @@
         font-weight: normal;
       }
 
+    }
+
+    @media (min-width:600px){
+      .mission-vision-values{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .company-summary{
+        grid-template-columns: 2fr 3fr;
+      }
     }
 
     @media (min-width:800px){
