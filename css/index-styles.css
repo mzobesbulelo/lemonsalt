@@ -1,3 +1,9 @@
+html{
+	scroll-behavior: smooth;
+}
+
+
+
 @media (min-width:250px){
 
 
@@ -439,6 +445,18 @@
 		font-size: 18px;
 	}
 
+	.contact-details b{
+		font-size: 20px;
+	}
+
+	.contact-details{
+		font-size: 15px;
+		color: white;
+		text-align: left;
+		padding-left: 50px;
+		padding-top: 20px;
+	}
+
 	.footer{
 		font-size: 15px;
 		background-color: rgb(72, 93, 122);
@@ -523,6 +541,18 @@
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 50px;
+	}
+
+	.contact-details b{
+		font-size: 25px;
+	}
+
+	.contact-details{
+		font-size: 15px;
+		color: white;
+		text-align: left;
+		padding-left: 50px;
+		padding-top: 20px;
 	}
 }
 
