@@ -424,6 +424,10 @@ html{
 	.logo-quote{
 		display: block;
 		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		object-position: top;
+		border-radius: 50%;
 	}
 
 	.quote{
