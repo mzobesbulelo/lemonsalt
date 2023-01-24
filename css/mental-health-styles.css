@@ -175,6 +175,10 @@
       .logo-quote{
         display: block;
         width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
       }
     
       .quote{
@@ -184,29 +188,31 @@
         padding-top: 50px;
         background-color: rgb(131, 157, 183);
         padding: 20px;
+        display: none;
       }
     
       .quote-text{
         text-align: center;
         color: white;
+        margin-top: 20px;
       }
     
       .quote-text span{
         font-weight: bold;
         font-size: 18px;
       }
-	
-	.contact-details b{
-		font-size: 20px;
-	}
 
-	.contact-details{
-		font-size: 15px;
-		color: white;
-		text-align: left;
-		padding-left: 50px;
-		padding-top: 20px;
-	}
+      .contact-details b{
+        font-size: 20px;
+      }
+    
+      .contact-details{
+        font-size: 15px;
+        color: white;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 20px;
+      }
     
       .footer{
         font-size: 15px;
