@@ -70,6 +70,24 @@ html{
 		font-weight: bold;
 	}
 
+	.sub-divisions-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 0 5%;
+		column-gap: 20%;
+		margin: 40px 0;
+	}
+
+	
+
+	#still-water-img{
+		width: 100%;
+	}
+
+	#coffee-box-img{
+		width: 100%;
+	}
+
 	.our-products{
 		display: none;
 	}
@@ -395,6 +413,7 @@ html{
 		background-color: rgb(62, 76, 94);
 		color: white;
 		border-radius: 10px;
+		display: none;
 	}
 
 	.health-page b{
@@ -557,6 +576,10 @@ html{
 		text-align: left;
 		padding-left: 50px;
 		padding-top: 20px;
+	}
+
+	.sub-divisions-grid{
+		padding: 0 15%;	
 	}
 }
 
@@ -768,6 +791,15 @@ html{
 		font-size: 20px;
 		font-weight: bold;
 		color: white;
+	}
+
+	.about-us{
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+	}
+
+	.sub-divisions-grid{
+		padding: 0 10%;
 	}
 }
 
