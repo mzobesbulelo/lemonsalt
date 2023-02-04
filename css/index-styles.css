@@ -127,6 +127,14 @@ html{
 	}
 }
 
+@media (min-width:769px){
+	.contact-details{
+		text-align: left;
+		margin-left: 30px;
+		margin-top: 20px;
+	}
+}
+
 @media (min-width:1025px){
 	.about-us{
 		display: grid;
