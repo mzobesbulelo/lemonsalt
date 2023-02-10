@@ -76,6 +76,7 @@ html{
 
 	#mental-health-img{
 		width: 100%;
+		display: none;
 	}
 
 	#education-training-img{
