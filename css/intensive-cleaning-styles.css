@@ -23,11 +23,13 @@ html{
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		cursor: pointer;
 		line-height: 20px;
+		border-bottom: 2px white solid;
     }
 
 	.nav a{
 		color:rgb(131, 157, 183);
 		text-decoration: none;
+		line-height: 27px;
 	}
 
 	.nav b{
@@ -47,6 +49,7 @@ html{
 		height: 300px;
 		display: flex;
 		justify-content: center;
+		display: none;
 	}
 
 	.logo-homeview{
@@ -686,6 +689,14 @@ html{
 }
 
 @media (min-width:437px){
+	.nav{
+	border-bottom: none;
+	}
+
+	.nav a{
+		line-height: 20px;
+	}
+
 	.our-products-1{
 		display: none;
 	}
