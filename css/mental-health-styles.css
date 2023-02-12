@@ -24,6 +24,7 @@
       .nav a{
         color:rgb(131, 157, 183);
         text-decoration: none;
+        line-height: 30px;
       }
 
       .nav b{
@@ -41,18 +42,11 @@
           justify-content: center;
           padding-top: 50px;
       }
-
-			.homeview p{
-				position: absolute;
-				bottom: 30px;
-				text-align: center;
-				color: white;
-				font-size: 15px;
-			}
   
       .logo-homeview{
           position: absolute;
           width: 150px;
+          top:30px;
       }
 
       .company-summary{
