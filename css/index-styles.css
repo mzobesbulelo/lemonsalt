@@ -55,13 +55,11 @@ html{
 	}
 
 	.right-arrow{
-		text-decoration-style: none;
-		text-decoration: none;
+		font-style: normal;
 	}
 
 	.down-arrow{
-		text-decoration-style: none;
-		text-decoration: none;
+		font-style: normal;
 	}
 
 	.background-gradient ul{
