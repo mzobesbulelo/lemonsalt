@@ -14,22 +14,22 @@ html{
   body{
       margin: 0;
 			font-family: Arial, Helvetica, sans-serif;
-			background-color: rgb(131, 157, 183);
+			background-color: white;
     }
 
   .nav{
-      	background-color: rgb(62, 76, 94);
+      	background-color: black;
 		padding-top: 10px;
 		padding-bottom: 10px;
       	text-align: center;
       	font-size: 20px;
-      	color: rgb(131, 157, 183);
+      	color: white;
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		cursor: pointer;
     }
 
 	.nav a{
-		color:rgb(131, 157, 183);
+		color:white;
 		text-decoration: none;
 	}
 
@@ -38,8 +38,8 @@ html{
 	}
 
     .about-us{
-		color: white;
-		background-color: rgb(131, 157, 183);
+		color: black;
+		background-color: white;
 		font-size: 15px;
 		line-height: 30px;
 		padding-inline: 30px;
@@ -48,27 +48,20 @@ html{
 	}
 
 	.about-us span{
-		color: rgb(131, 157, 183);
+		color: black;
 		font-size: 20px;
 		font-weight: bold;
         display: none;
 	}
 
-	.background-gradient{
-		position: relative;
-		padding-top: 25px;
-		padding-block: 40px;
-		z-index: 2;
-		margin-inline: -30px;
+	.right-arrow{
+		text-decoration-style: none;
+		text-decoration: none;
 	}
 
-	.background-gradient::after{
-		content: '';
-		background-image: linear-gradient(90deg,#f64f59,#c471ed49,rgba(131, 157, 183, 0));
-		position: absolute;
-		inset: 0;
-		z-index: -1;
-		max-width: 600px;
+	.down-arrow{
+		text-decoration-style: none;
+		text-decoration: none;
 	}
 
 	.background-gradient ul{
@@ -82,7 +75,8 @@ html{
 		column-gap: 20%;
 		row-gap: 4%;
 		margin: 40px 0;
-		background-color: white;
+		background-color: rgb(172, 172, 172);
+		border: 2px solid black;
 		border-radius: 20px;
 		padding-bottom: 30px;
 	}
@@ -178,8 +172,8 @@ html{
 
 	.footer{
 		font-size: 15px;
-		background-color: rgb(72, 93, 122);
-		color: rgb(131, 157, 183);
+		background-color: black;
+		color: rgb(112, 112, 112);
 		padding-top: 10px;
 		padding-bottom: 10px;
 		text-align: center;
@@ -188,8 +182,8 @@ html{
 	}
 
 	.footer span{
-		color: rgb(131, 157, 183);
-		font-weight: bold;
+		color: rgb(112, 112, 112);
+		font-weight: normal;
 		text-decoration: underline;
 	}
 
@@ -199,8 +193,16 @@ html{
 
 	.footer b{
         color: white;
-        font-weight: normal;
+        font-weight: bold;
     }
+
+	.contact-details{
+		color: rgb(112, 112, 112);
+	}
+
+	.contact-details b{
+		font-weight: bold;
+	}
 
 }
 
@@ -285,6 +287,7 @@ html{
 	.about-us-text-div{
 		padding-right: 30px;
 		padding-top: 50px;
+		color: white;
 	}
 
 	.background-gradient::after{
@@ -303,6 +306,7 @@ html{
 		margin-top: 0;
 		background-color: transparent;
 		transform: rotate(-1.5deg);
+		border: none;
 }
 
 }
