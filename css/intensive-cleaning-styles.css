@@ -527,7 +527,6 @@ html{
 		padding-bottom: 10px;
 		text-align: center;
 		border-top: 2px white solid;
-		border-bottom: 2px white solid;
 	}
 
 	.mission{
@@ -675,6 +674,53 @@ html{
         color: white;
         font-weight: normal;
       }
+
+	form{
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		padding: 20px 10px;
+		background-color: rgb(83, 6, 6);
+	}
+
+	form p{
+		margin: 0;
+		color: white;
+		font-weight: bold;
+	}
+
+	input{
+		padding: 10px 10px;
+		background-color: rgb(49, 3, 3);
+		color: white;
+		border: none;
+		transition: 0.2s;
+	}
+
+	input:focus{
+		background-color: white;
+		color: black;
+	}
+
+	#message{
+		padding: 10px 10px;
+		background-color: rgb(49, 3, 3);
+		color: white;
+		border: none;
+		height: 50px;
+		text-align: left;
+		font-family: poppins, sans-serif;
+	}
+
+	#message:focus{
+		background-color: white;
+		color: black;
+	}
+
+	form button{
+		width: 70px;
+		padding: 5px 5px;
+	}
 
 
 }
