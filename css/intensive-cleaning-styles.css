@@ -676,17 +676,20 @@ html{
       }
 
 	form{
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
 		row-gap: 10px;
 		padding: 20px 10px;
 		background-color: rgb(83, 6, 6);
 	}
 
-	form p{
+		#get-a-quote{
 		margin: 0;
 		color: white;
 		font-weight: bold;
+		background-color: rgb(83, 6, 6);
+		padding-left: 10px;
+		padding-top: 20px;
 	}
 
 	input{
@@ -718,8 +721,11 @@ html{
 	}
 
 	form button{
-		width: 70px;
-		padding: 5px 5px;
+		width: 100px;
+		height: 40px;
+		padding: auto;
+		border: none;
+		font-weight: bold;
 	}
 
 
@@ -851,6 +857,14 @@ html{
 		padding-top: 20px;
 	}
 
+	form{
+		padding: 30px;
+	}
+
+	#get-a-quote{
+		padding-left: 30px;
+	}
+
 }
 
 @media (min-width:700px){
@@ -866,9 +880,24 @@ html{
 	.mission-vision-values{
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 10px;
-		margin-left: 10px;
-		margin-right: 10px;
 		padding-top: 0;
+	}
+
+	form{
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
+		padding-inline: 100px;
+		padding-bottom: 80px;
+	}
+
+	form #message{
+		grid-column: 1/3;
+	}
+
+	#get-a-quote{
+		padding-left: 100px;
+		padding-top: 50px;
+		font-size: 23px;
 	}
 }
 
