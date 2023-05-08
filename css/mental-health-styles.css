@@ -1,0 +1,297 @@
+@media (min-width:250px){
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+      }
+
+    body p{
+      margin: 0;
+    }
+  
+    .nav{
+        background-color: rgb(62, 76, 94);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(131, 157, 183);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				line-height: 20px;
+      }
+
+      .nav a{
+        color:rgb(131, 157, 183);
+        text-decoration: none;
+        line-height: 30px;
+      }
+
+      .nav b{
+				font-weight: normal;
+				font-size: 15px;
+				color: rgb(255, 255, 255);
+				letter-spacing: 1.9px;
+			}
+  
+      .homeview{
+          position: relative;
+          height: 200px;
+          background-color: rgb(131, 157, 183);
+          display: flex;
+          justify-content: center;
+          padding-top: 50px;
+      }
+  
+      .logo-homeview{
+          position: absolute;
+          width: 150px;
+          top:30px;
+      }
+
+      .company-summary{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+      }
+
+      .company-summary-img-div{
+        width: 100%;
+      }
+
+      .company-summary-text{
+        background-color: rgb(202, 202, 202);
+        padding: 20px;
+        font-size: 15px;
+      }
+
+      .company-summary-text p{
+        margin: 0;
+      }
+
+      .company-summary-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover                                                                                                                                    ;
+      }
+
+      .company-summary b{
+        font-size: 20px;
+      }
+
+      .company-summary-2{
+        display: none;
+      }
+
+      .our-services{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-top: 10px;
+      }
+
+      .our-services-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 35%;
+      }
+
+      .our-services-text{
+        background-color: rgb(131, 157, 183);
+        color: white;
+        padding: 20px;
+        font-size: 15px;
+      }
+
+      .our-services b{
+        font-size: 20px;
+      }
+
+      .our-services-text ul{
+        padding-left: 20px;
+        margin-bottom: 0;
+        line-height: 25px;
+      }
+
+      .mission-vision-values{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 25px;
+        row-gap: 10px;
+      }
+
+      .mission{
+        padding: 20px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(131, 157, 183);
+      }
+
+      .vision{
+        padding: 20px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(131, 157, 183);
+      }
+
+      .values{
+        padding: 20px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(131, 157, 183);
+      }
+
+      .meet-the-team{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+        text-align: center;
+        display: none;
+      }
+
+      .meet-the-team p{
+        font-size: 14px;
+      }
+
+
+
+
+
+
+
+
+      .logo-quote{
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+      }
+    
+      .quote{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 50px;
+        background-color: rgb(131, 157, 183);
+        padding: 20px;
+        display: none;
+      }
+    
+      .quote-text{
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+      }
+    
+      .quote-text span{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .contact-details b{
+        font-size: 20px;
+      }
+    
+      .contact-details{
+        font-size: 15px;
+        color: white;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 20px;
+      }
+    
+      .footer{
+        font-size: 15px;
+        background-color: rgb(72, 93, 122);
+        color: rgb(131, 157, 183);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        line-height: 30px;
+      }
+    
+      .footer span{
+        color: rgb(131, 157, 183);
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    
+      .footer a{
+        text-decoration: none;
+      }
+
+      .footer b{
+        color: white;
+        font-weight: normal;
+      }
+
+    }
+
+    @media (min-width:600px){
+      .mission-vision-values{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .company-summary{
+        grid-template-columns: 2fr 3fr;
+      }
+    }
+
+    @media (min-width:800px){
+      .company-summary{
+        display: none;
+      }
+      
+      .company-summary-2{
+        display: block;
+        position: relative;
+      }
+
+      .company-summary-img-div-2{
+        width: 100%;
+      }
+
+      .company-summary-img-2{
+        width: 100%;
+      }
+
+      .company-summary-text-2{
+        position: absolute;
+        top: 50px;
+        margin: 20px;
+        background-color: rgb(244, 193, 114);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.349);
+      }
+
+    }
+
+    @media (min-width:1025px){
+      .company-summary-img-div-2{
+        height: 500px;
+      }
+
+      .company-summary-img-2{
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .company-summary-text-2{
+        top: 20px;
+      }
+
+      .our-services{
+        grid-template-columns: 3fr 2fr;
+      }
+    }
+
+    @media (min-width:1200px){
+      .company-summary-text-2{
+        width: 40%;
+        box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.349);
+      }
+    }
