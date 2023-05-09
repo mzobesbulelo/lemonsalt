@@ -68,6 +68,12 @@
     .nav-bar a{
         color: white;
         text-decoration: none;
+        transition: 3s;
+    }
+
+    .nav-bar a:hover{
+        color: white;
+        text-decoration: underline;
     }
 
     .home-div{
@@ -129,10 +135,23 @@
     #btn1{
         background-color: transparent;
         border: none;
+        cursor: pointer;
     }
 
     #btn2{
         display: none;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    #btn2:hover{
+        background-color: rgb(196, 196, 196);
+        color: rgb(77, 77, 77);
+    }
+
+    #btn2:active{
+        background-color: rgba(4, 63, 28, 0.425);
+        color: rgb(255, 254, 254);
     }
 
     .sub1{
