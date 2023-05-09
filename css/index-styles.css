@@ -44,7 +44,7 @@
         border-radius: 20px;
         margin-top: -50px;
         margin-left: -3px;
-        z-index: 2;
+        z-index: 10;
     }
 
     .lemonsalt-bold{
@@ -126,7 +126,12 @@
         padding-bottom: 20px;
     }
 
-    .sub-divisions-div button{
+    #btn1{
+        background-color: transparent;
+        border: none;
+    }
+
+    #btn2{
         display: none;
     }
 
@@ -366,7 +371,8 @@
         align-items: center;
     }
 
-    .sub button{
+    #btn2{
+        display: block;
         font-size: 20px;
         font-weight: bold;
         margin-top: 35px;
