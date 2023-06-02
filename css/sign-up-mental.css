@@ -17,6 +17,12 @@ body{
 }
 
 @media (min-width:250px){
+    button img{
+        width: 100%;
+        transform: rotate(340deg);
+        cursor: pointer;
+    }
+    
     form{
         display: flex;
         flex-direction: column;
