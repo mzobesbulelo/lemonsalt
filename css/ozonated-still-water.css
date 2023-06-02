@@ -1,0 +1,48 @@
+@media (min-width:250px){
+
+    body{
+        margin: 0;
+        height: 600px;
+    }
+    
+    .background-img{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #home-logo{
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+    }
+    
+    p{
+        position: absolute;
+        top: 250px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-shadow: 3px 2px black;
+        font-weight: bold;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+    
+    }
+    
+    @media (min-width:900px){
+        #home-logo{
+            width: 300px;
+        }
+    
+        p{
+            top: 300px;
+            font-size: 40px;
+        }
+    }

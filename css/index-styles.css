@@ -1,0 +1,450 @@
+
+@media (min-width: 300px){
+
+    body{
+        background-color: rgb(51, 51, 51);
+        font-family: 'poppins' ,sans-serif;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .nav{
+        display: flex;
+        font-size: 20px;
+    }
+
+    .links-div{
+        background-color: rgb(27, 27, 27);
+        border: solid 2px white;
+        display: none;
+    }
+
+    .links-div a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .links-div a:hover{
+        color: rgb(97, 97, 97);
+    }
+
+    .menu-btn{
+        font-size: 40px;
+        color: white;
+        margin-left: 15px;
+    }
+
+    .menu-btn:hover .links-div{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: bold;
+        gap: 50px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 80px;
+        border-radius: 10px;
+        margin-top: -50px;
+        margin-left: -3px;
+        z-index: 10;
+    }
+
+    .lemonsalt-bold{
+        display: none;
+    }
+
+    .lemonsalt-bold a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        margin-left: 10%;
+        display: none;
+    }
+
+    .nav-bar a{
+        color: white;
+        text-decoration: none;
+        transition: 3s;
+    }
+
+    .nav-bar a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .home-div{
+        position: relative;
+    }
+
+    #home-div-img{
+        margin-top: 10px;
+        width: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    #leaves-background-img{
+        display: none;
+    }
+
+    .description{
+        margin-top: 180px;
+        margin-inline: 10px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.411);
+        color: white;
+        font-size: 14px;
+    }
+
+    .description1{
+        display: none;
+    }
+
+    .sub-header-2{
+        display: none;
+    }
+
+    .sub-divisions-container{
+        background-color: white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 20px 15px;
+    }
+
+    .sub-divisions-container p{
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(117, 117, 117);
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .sub-divisions-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    #btn1{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #btn2{
+        display: none;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    #btn2:hover{
+        background-color: rgb(196, 196, 196);
+        color: rgb(77, 77, 77);
+    }
+
+    #btn2:active{
+        background-color: rgba(4, 63, 28, 0.425);
+        color: rgb(255, 254, 254);
+    }
+
+    .sub1{
+        padding: 0px 20px;
+        background-color: rgb(177, 177, 177);
+        border-radius: 20px;
+    }
+
+    .sub{
+        padding: 15px;
+        background-color: rgb(177, 177, 177);
+        border-radius: 20px;
+    }
+
+    #sub-img{
+        width: 100%;
+    }
+
+    #sub-img1{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .rights-reserved{
+        display: none;
+    }
+
+    .footer{
+        text-align: center;
+        color: rgb(104, 104, 104);
+        background-color: rgb(34, 34, 34);
+        margin-block: -20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer a{
+        color: rgb(104, 104, 104);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .footer i{
+        color: white;
+    }
+
+    .footer-bold{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .developer{
+        margin-top: 30px;
+    }
+
+    .shapes{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: -10px;
+        z-index: -1;
+    }
+
+    #circle{
+        position: absolute;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border: solid rgb(44, 44, 44) 3px;
+        top: -40px;
+        right: -40px;
+        z-index: -1;
+    }
+
+    #square{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: solid rgb(44, 44, 44) 3px;
+        top: 180px;
+        left: -55px;
+        transform: rotate(80deg);
+        z-index: -1;
+    }
+
+    #circle-lines{
+        position: absolute;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        background-color: rgb(102, 102, 102);
+        top: 260px;
+        right: -10px;
+        z-index: -1;
+    }
+
+}
+
+@media (min-width: 481px){
+
+    #circle1{
+        position: absolute;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border: solid rgb(44, 44, 44) 3px;
+        top: 200px;
+        left: 155px;
+        z-index: -1;
+    }
+
+    #square1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(44, 44, 44);
+        top: 40px;
+        right: 150px;
+        transform: rotate(120deg);
+        z-index: -1;
+    }
+
+    #circle-lines1{
+        position: absolute;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        background-color: rgb(102, 102, 102);
+        top: -30px;
+        left: -30px;
+        z-index: -1;
+    }
+
+    .sub-divisions-div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 769px){
+    .shapes{
+        display: none;
+    }
+
+    .menu-btn-div{
+        display: none;
+    }
+
+    .nav{
+        padding: 5px 20px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .nav::before{
+        content: '';
+        top: -10px;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0));
+        z-index: -1;
+    }
+
+    .nav a{
+        color: rgba(255, 255, 255, 0.596);
+    }
+
+    .lemonsalt-bold{
+        display: block;
+    }
+
+    .nav-bar{
+        display: flex;
+    }
+
+    #leaves-background-img{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -100px;
+        z-index: -2;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .description1{
+        display: block;
+        margin-top: 200px;
+        margin-bottom: 30px;
+        margin-inline: 10px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .description1 span{
+        font-weight: bold;
+    }
+
+    .sub-divisions-container{
+        background-color: rgb(46, 46, 46);
+        border-radius: 30px;
+    }
+
+    .sub-divisions-div{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .sub-header-1{
+        display: none;
+    }
+
+    .sub-divisions-container p{
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .sub-header-2{
+        display: block;
+        color: white;
+    }
+
+    .sub-divisions-div button{
+        display: block;
+    }
+
+    .sub{
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    #btn2{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    .sub-divisions-div{
+        column-gap: 20px;
+    }
+
+    .footer{
+        text-align: left;
+        padding-inline: 50px;
+        z-index: -1;
+    }
+
+    .rights-reserved{
+        display: block;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .developer{
+        text-align: center;
+    }
+
+} 
+
+@media (min-width: 900px){
+    .sub-divisions-div{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1150px){
+    .sub-divisions-div{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
