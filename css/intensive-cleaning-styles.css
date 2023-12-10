@@ -8,55 +8,64 @@ html{
 
 
   body{
-      margin: 0;
-			font-family: Arial, Helvetica, sans-serif;
-			background-color: white;
+    margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
     }
 
-  .nav{
-      	background-color: black;
-		padding-top: 20px;
-		padding-bottom: 20px;
-      	text-align: center;
-      	font-size: 30px;
-      	color: white;
-		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-		cursor: pointer;
-		line-height: 20px;
-		border-bottom: 2px white solid;
-    }
+  .hero-div{
+	height: 100vh;
+	position: relative;
+  }
 
-	.nav a{
-		color:white;
-		text-decoration: none;
-		line-height: 27px;
-	}
+  #hero-img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
 
-	.nav b{
-		font-size: 15px;
-		font-weight: normal;
-		color: gray;
-		letter-spacing: 3px;
-	}
+  .hero-div div{
+	height: 100%;
+  }
 
-	.spray-img{
-		width: 100%;
-		object-fit: cover;
-	}
+  #hero-logo{
+	position: absolute;
+	width: 150px;
+	top: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
 
-	.homeview{
-		position: relative;
-		height: 300px;
-		display: flex;
-		justify-content: center;
-		display: none;
-	}
+  .hero-div p{
+	position: absolute;
+	transform: translateX(-50%);
+	top: 300px;
+	left: 50%;
+	width: 80%;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+  }
 
-	.logo-homeview{
-		position: absolute;
-		width: 150px;
-		top: 80px;
-	}
+  .hero-div::before{
+	position: absolute;
+	inset: 0 0 0 0;
+	content: '';
+	background: linear-gradient(to top, black, rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.63));
+  }
+
+  .hero-div a{
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: bold;
+	padding: 10px 20px;
+	background-color: rgb(131, 157, 183);
+	color: white;
+	border: none;
+	text-decoration: none;
+  }
 
 	.about-us{
 		color: white;
@@ -82,107 +91,7 @@ html{
 		margin: 40px 0;
 	}
 
-	
-
-	#still-water-img{
-		width: 100%;
-	}
-
-	#coffee-box-img{
-		width: 100%;
-	}
-
-	#architects-img{
-		width: 100%;
-	}
-
-	#mental-health-img{
-		width: 100%;
-	}
-
-	#education-training-img{
-		width: 100%;
-	}
-
-	.our-products{
-		display: none;
-	}
-
-	.our-products-1{
-		color: white;
-		background-color: rgb(62, 76, 94);
-		font-size: 15px;
-		line-height: 40px;
-		padding: 25px;
-		display: none;
-	}
-
-	.our-products{
-		display: block;
-	}
-
-	.our-products-1 p{
-		margin: 0;
-	}
-
-	.our-products-1 span{
-		color: rgb(131, 157, 183);
-		font-size: 20px;
-		font-weight: bold;
-	}
-
-	.our-products-1 ul{
-		list-style-type: square;
-	}
-
-	.our-products{
-		color: white;
-		font-size: 15px;
-		line-height: 40px;
-		width: 100%;
-		position: relative;
-		display: block;
-	}
-
-	.products-img{
-		width: 100%;
-		object-fit: cover;
-		height: 800px;
-	}
-
-	.our-products p{
-		margin: 0;
-		position: absolute;
-		top: 50px;
-		left: 15%;
-	}
-
-	.our-products p span{
-		font-size: 30px;
-		color: white;
-	
-	}
-
-	.our-products span{
-		color: rgb(131, 157, 183);
-		font-size: 20px;
-		font-weight: bold;
-	}
-
-	.our-products ul{
-		list-style-type: square;
-	}
-
-	.our-products-list{
-		position: absolute;
-		top: 150px;
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 50px;
-	}
-
-
-	.our-services{
+	#our-services{
 		color: black;
 		background-color: rgb(231, 231, 231);
 		font-size: 15px;
@@ -191,7 +100,7 @@ html{
 		
 	}
 
-	.our-services p{
+	#our-services p{
 		line-height: 25px;
 	}
 
@@ -486,13 +395,13 @@ html{
 		border-radius: 20px;
 	}
 	
-	.our-services .description1{
+	#our-services .description1{
 		color: rgb(131, 157, 183);
 		font-size: 20px;
 		font-weight: bold;
 	}
 
-	.our-services .description2{
+	#our-services .description2{
 		color: rgb(131, 157, 183);
 		font-weight: bold;
 		font-size: 18px;
@@ -601,15 +510,6 @@ html{
 		border-radius: 10px;
 	}
 
-	.health-page button:hover{
-		opacity: 0.7;
-	}
-
-	.health-page button:active{
-		background-color: yellow;
-		color: black;
-	}
-
 	.logo-quote{
 		display: block;
 		width: 150px;
@@ -646,7 +546,6 @@ html{
 		font-size: 15px;
 		color: white;
 		text-align: left;
-		padding-left: 50px;
 		padding-top: 20px;
 	}
 
@@ -654,8 +553,7 @@ html{
 		font-size: 15px;
 		background-color: black;
 		color: rgb(131, 157, 183);
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding: 10px 20px 20px;
 		text-align: center;
 		line-height: 30px;
 	}
@@ -680,52 +578,43 @@ html{
 		grid-template-columns: 1fr;
 		row-gap: 10px;
 		padding: 20px 10px;
-		background-color: rgb(83, 6, 6);
+		background-color: white;
 	}
 
-		#get-a-quote{
+	#get-a-quote{
 		margin: 0;
-		color: white;
+		color: black;
 		font-weight: bold;
-		background-color: rgb(83, 6, 6);
 		padding-left: 10px;
 		padding-top: 20px;
 	}
 
 	input{
 		padding: 10px 10px;
-		background-color: rgb(49, 3, 3);
-		color: white;
+		background-color: rgb(180, 180, 180);
+		color: black;
 		border: none;
 		transition: 0.2s;
 	}
 
-	input:focus{
-		background-color: white;
-		color: black;
-	}
-
 	#message{
 		padding: 10px 10px;
-		background-color: rgb(49, 3, 3);
-		color: white;
+		background-color: rgb(180, 180, 180);
+		color: black;
 		border: none;
 		height: 50px;
 		text-align: left;
-		font-family: poppins, sans-serif;
-	}
-
-	#message:focus{
-		background-color: white;
-		color: black;
+		font-family: 'poppins', sans-serif;
 	}
 
 	form button{
-		width: 100px;
+		width: 90px;
 		height: 40px;
 		padding: auto;
 		border: none;
 		font-weight: bold;
+		background-color: black;
+		color: white;
 	}
 
 
@@ -877,6 +766,46 @@ html{
 }
 
 @media (min-width:769px){
+
+	.hero-div{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		overflow: hidden;
+	}
+
+	.hero-div div{
+		position: relative;
+	}
+
+	.hero-div::before{
+		background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.644));
+	}
+
+	#hero-logo{
+		top: 200px;
+		z-index: 1;
+		filter: brightness(100%);
+	}
+
+	.hero-div img{
+		filter: brightness(35%);
+	}
+
+	.hero-div p{
+		transform: none;
+		top: 210px;
+		left: 50px;
+		width: auto;
+		text-align: left;
+	}
+
+	.hero-div a{
+		transform: none;
+		top: 270px;
+		bottom: auto;
+		left: 50px;
+	}
+
 	.mission-vision-values{
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 10px;
@@ -902,21 +831,6 @@ html{
 }
 
 @media(min-width:900px){
-	.our-products-list{
-		left: 18%;
-		background-color: rgba(0, 0, 0, 0.808);
-		padding-left: 80px;
-		padding-right: 100px;
-		border-radius: 20px;
-	}
-
-	.service-7-div .description2{
-		color: white;
-	}
-
-	.our-products p{
-		left: 40%;
-	}
 
 	.mission-vision-values{
 		margin: 0;
@@ -951,10 +865,6 @@ html{
 
 	.values span{
 		font-size: 25px;
-	}
-
-	.health-page p b{
-		font-size: 18px;
 	}
 
 	.service-1-div{
