@@ -370,7 +370,7 @@
     }
 
     .sub-divisions-div{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .sub-header-1{
@@ -438,13 +438,16 @@
 } 
 
 @media (min-width: 900px){
-    .sub-divisions-div{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-}
 
-@media (min-width: 1150px){
-    .sub-divisions-div{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .sub-divisions-container{
+        max-width: 900px;
+        margin-inline: auto;
+        margin-bottom: 30px
     }
+
+    #leaves-background-img{
+        height: 340px;
+        object-fit: cover;
+    }
+
 }

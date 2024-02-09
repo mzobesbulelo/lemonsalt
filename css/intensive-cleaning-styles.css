@@ -2,8 +2,6 @@ html{
 	scroll-behavior: smooth;
 }
 
-
-
 @media (min-width:250px){
 
 
@@ -39,7 +37,7 @@ html{
   .hero-div p{
 	position: absolute;
 	transform: translateX(-50%);
-	top: 300px;
+	top: 230px;
 	left: 50%;
 	width: 80%;
 	text-align: center;
@@ -56,7 +54,7 @@ html{
 
   .hero-div a{
 	position: absolute;
-	bottom: 100px;
+	top: 300px;
 	left: 50%;
 	transform: translateX(-50%);
 	font-weight: bold;
@@ -430,8 +428,7 @@ html{
 		display: grid;
 		grid-template-columns: 1fr;
 		background-color: rgb(62, 76, 94);
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-inline: 20px;
 		padding-top: 5px;
 		padding-bottom: 10px;
 		text-align: center;
@@ -553,7 +550,7 @@ html{
 		font-size: 15px;
 		background-color: black;
 		color: rgb(131, 157, 183);
-		padding: 10px 20px 20px;
+		padding: 10px 20px 30px;
 		text-align: center;
 		line-height: 30px;
 	}
@@ -577,7 +574,7 @@ html{
 		display: grid;
 		grid-template-columns: 1fr;
 		row-gap: 10px;
-		padding: 20px 10px;
+		padding: 20px 20px;
 		background-color: white;
 	}
 
@@ -585,7 +582,7 @@ html{
 		margin: 0;
 		color: black;
 		font-weight: bold;
-		padding-left: 10px;
+		padding-inline: 20px;
 		padding-top: 20px;
 	}
 
@@ -769,7 +766,7 @@ html{
 
 	.hero-div{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 3fr;
 		overflow: hidden;
 	}
 
@@ -785,15 +782,28 @@ html{
 		top: 200px;
 		z-index: 1;
 		filter: brightness(100%);
+		width: 200px;
 	}
 
 	.hero-div img{
 		filter: brightness(35%);
 	}
 
+	.hero-grid{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		width: 100%;
+	}
+
+	.hero-grid img{
+		width: 100%;
+		object-fit: cover;
+	}
+
 	.hero-div p{
 		transform: none;
-		top: 210px;
+		top: 220px;
 		left: 50px;
 		width: auto;
 		text-align: left;
@@ -801,7 +811,7 @@ html{
 
 	.hero-div a{
 		transform: none;
-		top: 270px;
+		top: 280px;
 		bottom: auto;
 		left: 50px;
 	}
