@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleaning Products & Services in Middelburg</title>
     <link rel="stylesheet" href="css/intensive-cleaning-styles.css">
+    <script src="script.js"></script>
     <meta name="description" content="Order deep cleaning products. We also offer deep cleaning services like property cleaning and furniture cleaning (couchs...)">
 </head>
 <body>
@@ -33,108 +34,205 @@
     
     <div id="our-services">
         
-            <span class="description1">Our Services</span>
+            <p class="title">Our Services</p>
             
             <p id="service-description">At LemonSalt, our services are above average, we are obsessed with cleanliness.
             Here are the services we provide:</p>
 
-            <div class="services-wrap">
+            <div class="services-grid">
 
-                <div class="service-1-div">
+                <div class="service-block service-1" onclick="expand1()">
 
-                    <img id="service-img-1" src="images/pille-r-priske-Y1JjwhHaPRM-unsplash.WebP" alt="image of a wet cleaning sponge">
+                    <img class="service-images service-1-img" src="images/pille-r-priske-Y1JjwhHaPRM-unsplash.WebP">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Daily cleaning
+                        <p class="service-block-title">
+                            Daily cleaning 
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander1"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-1">
+
+                        The day-to-day cleaning of homes, offices or guest houses provided daily,
+                        weekly, bi-weekly or monthly.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-2-div">
+                <div class="service-block service-2" onclick="expand2()">
 
-                    <img id="service-img-2" src="images/ashley-byrd-VLHNfKF1Uec-unsplash.WebP" alt="image of the floor and walls">
+                    <img class="service-images service-2-img" src="images/ashley-byrd-VLHNfKF1Uec-unsplash.WebP" alt="image of a wet cleaning sponge">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Deep cleaning - walls & floors
+                        <p class="service-block-title">
+                            Deep cleaning - walls and floors 
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander2"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-2">
+
+                        This is a service that is a little intensive. We get into every nook-and-cranny,
+                        cleaning and disinfecting all areas with the appropriate chemicals. The walls
+                        and floors are scrubbed and disinfected. Our chemicals are environmentally
+                        friendly and allergen free. Every room and surface is then fogged. This service
+                        is provided monthly, bi-monthly or as-and-when-needed.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-3-div">
+                <div class="service-block service-3" onclick="expand3()">
 
-                    <img id="service-img-3" src="images/jaime-nugent-5RzO9Ne1Avo-unsplash.WebP" alt="image of a fogging machine">
+                    <img class="service-images service-3-img" src="images/jaime-nugent-5RzO9Ne1Avo-unsplash.WebP" alt="image of a wet cleaning sponge">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Fogging
+                        <p class="service-block-title">
+                            Fogging
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander3"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-3">
+
+                        Fogging is a sterilization technique where sanitizing products are mixed with
+                        water and emitted as a fine mist or spray. We use it fumigate large areas
+                        that are near impossible to sterilize by hand.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-4-div">
+                <div class="service-block service-4" onclick="expand4()">
 
-                    <img id="service-img-4" src="images/kevin-martin-jose-GzQJ11g6ohc-unsplash.WebP" alt="image of windows">
-                    <p>
+                    <img class="service-images service-4-img" src="images/kevin-martin-jose-GzQJ11g6ohc-unsplash.WebP" alt="image of a wet cleaning sponge">
 
-                        Window cleaning
+                    <div class="service-block-title-grid">
 
+                        <p class="service-block-title">
+                            Window cleaning
+                        </p>
+
+                        <i class="fa-solid fa-circle-chevron-down expanders expander4"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-4">
+
+                        Windows are cleaned with a streak free detergent that is friendly to the
+                        environment, leaving a sparkling shine. High-rise windows are cleaned on request.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-5-div">
+                <div class="service-block service-5" onclick="expand5()">
 
-                    <img id="service-img-5" src="images/daniel-kefeli--uCp1YSCC-M-unsplash2.WebP" alt="image of a car being washed">
+                    <img class="service-images service-5-img" src="images/daniel-kefeli--uCp1YSCC-M-unsplash2.WebP" alt="image of a wet cleaning sponge">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Car washing for fleets
+                        <p class="service-block-title">
+                            Car wash for your fleet
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander5"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-5">
+
+                        We provide a deep clean valet for  company fleets. This includes the cleaning
+                        of the upholstery car seats or conditioning leather seats, vehicle fogging
+                        and cleaning of the tyres.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-6-div">
+                <div class="service-block service-6" onclick="expand6()">
 
-                    <img id="service-img-6" src="images/sina-saadatmand-gB9hryu1q40-unsplash.WebP" alt="image of a carpet">
+                    <img class="service-images service-6-img" src="images/sina-saadatmand-gB9hryu1q40-unsplash.WebP" alt="image of a wet cleaning sponge">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Carpet & upholstery cleaning
+                        <p class="service-block-title">
+                            Carpet and upholstery cleaning
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander6"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-6">
+
+                        All upholstery and carpets are deep cleaned, removing pet hairs, pee stains
+                        and odors and other tougher stains. The cleaning detergent used is tough on
+                        stains and friendly to the environment.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-7-div">
+                <div class="service-block service-7" onclick="expand7()">
 
-                    <img id="service-img-7" src="images/teemu-paananen-OOE4xAnBhKo-unsplash.WebP" alt="image of leaves representing purification">
+                    <img class="service-images service-7-img" src="images/teemu-paananen-OOE4xAnBhKo-unsplash.WebP" alt="image of a wet cleaning sponge">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Air purification technology systems 
-                        <br>
+                        <p class="service-block-title">
+                            Air purification systems
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander7"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-7">
+
+                        These air purifier machines can be bought from us to keep your office area
+                        free from airborne viruses and bacteria. This service is provided optionally
+                        with the deep clean service for up to 3 hours.
+                        
                     </p>
 
                 </div>
 
-                <div class="service-8-div">
+                <div class="service-block service-8" onclick="expand8()">
 
-                    <img id="service-img-8" src="images/john-matychuk-yvfp5YHWGsc-unsplash.WebP" alt="image of a car parking area">
+                    <img class="service-images service-8-img" src="images/john-matychuk-yvfp5YHWGsc-unsplash.WebP" alt="image of a wet cleaning sponge">
 
-                    <p>
+                    <div class="service-block-title-grid">
 
-                        Parking area cleaning
+                        <p class="service-block-title">
+                            Parking area cleaning
+                        </p>
 
+                        <i class="fa-solid fa-circle-chevron-down expanders expander8"></i>
+
+                    </div>
+
+                    <p class="service-content service-content-8">
+
+                        With high water pressure, the parking lot or driveway is super cleaned,
+                        removing moss, weeds, algae and many other. Grass cutting abd garden maintenance
+                        can be provided as well on request.
+                        
                     </p>
 
                 </div>
+                
 
             </div>
             
@@ -142,13 +240,14 @@
 
     <div class="about-us">
 
-        <span>About Us</span>
-            <br><br>
-            At LemonSalt, we are obsessed with cleaning and we understand the importance of having a reliable and trustworthy cleaning company that you can count on. That’s why we pride ourselves on being one of the most honest and dependable cleaning service providers in South Africa.
+        <p id="about-us-bold">About Us</p>
+            <p>
+                At LemonSalt, we are obsessed with cleaning and we understand the importance of having a reliable and trustworthy cleaning company that you can count on. That’s why we pride ourselves on being one of the most honest and dependable cleaning service providers in South Africa.
             <br><br>
             Since our inception, we have been dedicated to providing our customers with the most professional and exceptional service. We understand the importance of protecting your home or office from viruses and bacteria as well as your budget, which is why we offer affordable prices for a wide range of services.
             <br><br>
             When we say "CLEAN" we mean "IMMACULATE!"
+            </p>
 
     </div>
     
@@ -202,7 +301,7 @@
 
             <input type="text" name="Full Name" id="full-name" placeholder="Full Name">
             <input type="text" name="Email" id="email" placeholder="Email">
-            <textarea name="Message" id="message">I would like to get a quote for your products and services.
+            <textarea name="Message" id="message">I would like to get a quote for your services.
             </textarea>
             <button type="submit">Submit</button>
 
@@ -215,10 +314,10 @@
         
         <div class="quote-text">
             <p>
+                <span>Sellah Moreku</span>
+                <br><br>
                 "The most professional service I have ever had.
-                Truly, when they say 'clean' they mean IMMACULATE!"
-            <br><br>
-                 <span>Sellah Moreku</span>
+                Truly, when they say 'clean' they mean IMMACULATE!"  
             </p>
         </div>
         
@@ -239,13 +338,13 @@
             <i class="fa-brands fa-whatsapp"></i> 068 196 0955 
             
         </div>
-        <br>
-        <b>
-            @2019
-        </b>
+
         <br>
 
-        &copy; All rights reserved by <a target="_blank" href="https://www.mzobesbulelo.co.za/"><span>Sbulelo Mzobe</span></a>
+        <div class="developer">
+            This website was designed and developed by <a target="_blank" href="https://www.mzobesbulelo.co.za/"><span>Sbulelo Mzobe</span></a>
+        </div>
+        
     </div>
 
 </body>
