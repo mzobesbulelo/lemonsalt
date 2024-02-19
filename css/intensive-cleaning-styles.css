@@ -172,7 +172,7 @@ button:hover{
 		display: grid;
 		justify-content: center;
 		align-self: start;
-		margin-top: 10px;
+		margin-top: 20px;
 		transition: .5s;
 	}
 
