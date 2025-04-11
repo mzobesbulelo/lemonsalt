@@ -54,45 +54,39 @@
 
                 <div class="box1-individual-options">
 
-                    <input type="text" name="Full Name" placeholder="Full Name*" class="box1Inputs" required>
-                    <input type="text" name="Income Tax ID" placeholder="Income Tax ID*" class="box1Inputs" >
-                    <input type="number" name="RSA ID" minlength="13" maxlength="13" placeholder="RSA ID*" class="box1Inputs rsa-id" required>
-                    <input type="number" name="Phone" minlength="10" maxlength="10" placeholder="Phone*" class="box1Inputs" required>
-                    <input type="email" name="Email" placeholder="Email*" class="box1Inputs" required>
+                    <input type="text" name="Full Name" placeholder="Full Name*" required>
+                    <input type="text" name="Income Tax ID" placeholder="Income Tax ID*" required>
+                    <input type="number" name="RSA ID" minlength="13" maxlength="13" placeholder="RSA ID*" class="rsa-id" required>
+                    <input type="number" name="Phone" minlength="10" maxlength="10" placeholder="Phone*" required>
+                    <input type="email" name="Email" placeholder="Email*" required>
 
                 </div>
 
             </div>
 
-            <button class="next-buttons next-button1" onclick="nextButton1()">
-                Next
-            </button>
-
         </div>
 
         <div class="box-divs box3-div">
 
-            <select name="" id="" required>
-                <option value="CC" disabled selected>Entity Type*</option>
-                <option value="CC">CC</option>
-                <option value="(PTY) LTD">(PTY) LTD</option>
-                <option value="Non-Profit">Non-Profit</option>
-                <option value="LLC">LLC</option>
+            <select name="" id="select" required>
+                <option value="Please Select" disabled selected>Entity Type*</option>
+                <option value="Company">Company</option>
+                <option value="Close Corporation">Close Corporation</option>
+                <option value="Organization">Organization</option>
+                <option value="Body Corporation">Body Corporation</option>
+                <option value="Other" class="entity-type-other">Other (Please Specify)</option>
             </select>
 
-            <input type="text" placeholder="Company Name*" required>
-            <input type="number" placeholder="Registration no.*" required>
-            <input type="number" placeholder="Income Tax*" required>
-            <input type="text" placeholder="NPO*" required>
-            <input type="number" placeholder="VAT">
-            <input type="text" placeholder="PAYE">
-            <input type="text" placeholder="UIF">
-            <input type="text" placeholder="SDL">
-            <input type="text" placeholder="Compensation Fund">
-
-            <button class="next-buttons next-button3">
-                Next
-            </button>
+            <input type="text" name="Entity Type" placeholder="Entity Type*" class="entity-type-specify" required>
+            <input type="text" name="Company Name" placeholder="Company Name*" required>
+            <input type="number" name="Registration no." placeholder="Registration no.*" required>
+            <input type="number" name="Income Tax" placeholder="Income Tax*" required>
+            <input type="text" name="NPO" placeholder="NPO*" required>
+            <input type="number" name="VAT No." placeholder="VAT No.">
+            <input type="text" name="PAYE" placeholder="PAYE">
+            <input type="text" name="UIF" placeholder="UIF">
+            <input type="text" name="SDL" placeholder="SDL">
+            <input type="text" name="Compensation Fund" placeholder="Compensation Fund">
 
         </div>
 
@@ -102,15 +96,29 @@
                 How can we help you today?
             </p>
 
+            <p class="info">
+                Please specify the From & To dates for each service
+            </p>
+
             <div class="box-grids box2-grid">
 
                 <div class="box2-individual-options">
 
-                    <input type="checkbox" name="Are we keeping the original statutory docs?"> Are we keeping the original statutory docs?
+                    <input type="checkbox" name="Are we keeping the original statutory docs?" class="long-text"> Are we keeping the original statutory docs?
                     <br><br>
-                    <input type="checkbox" name="Provisional Tax" id=""> Provisional Tax
+                    <input type="checkbox" name="Provisional Tax" id=""> Provisional Tax 
+                    <br><br>
+                    <div>
+                        <input type="date" name="Prov Tax From Date" id="">
+                        <input type="date" name="Prov Tax To Date"  id="">
+                    </div>
                     <br><br>
                     <input type="checkbox" name="Income Tax" id=""> Income Tax
+                    <br><br>
+                    <div>
+                        <input type="date" name="Income Tax From Date" id="">
+                        <input type="date" name="Income Tax To Date" id="">
+                    </div>
                     <br><br>
                     <input type="checkbox" name="Other" id=""> Other, please specify:
                     <br><br>
@@ -118,42 +126,95 @@
 
                 </div>
 
-                <div class="box2-organization-options">
+                <div class="box2-organization-options" style="display: none;">
 
-                    <input type="checkbox" name="Are we keeping the original statutory docs?"> Are we keeping the original statutory docs?
+                    <input type="checkbox" name="Are we keeping the original statutory docs?" class="long-text"> <span>Are we keeping the original statutory docs?</span>
                     <br><br>
                     <input type="checkbox" name="N/C Director?"> N/C Director?
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="N/C Director From Date" id="">
+                        <input type="date" name="N/C Director To Date"  id="">
+                    </div>
                     <input type="checkbox" name="Provisional Tax" id=""> Provisional Tax
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="Provisional Tax From Date" id="">
+                        <input type="date" name="Provisional Tax To Date"  id="">
+                    </div>
                     <input type="checkbox" name="Income Tax" id=""> Income Tax
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="Income Tax From Date" id="">
+                        <input type="date" name="Income Tax To Date"  id="">
+                    </div>
                     <input type="checkbox" name="VAT (processing)" id=""> VAT (processing)
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="VAT (processing) From Date" id="">
+                        <input type="date" name="VAT (processing) To Date"  id="">
+                    </div>
                     <input type="checkbox" name="PAYE (processing)" id=""> PAYE (processing)
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="PAYE (processing) From Date" id="">
+                        <input type="date" name="PAYE (processing) To Date"  id="">
+                    </div>
                     <input type="checkbox" name="SDL (processing)" id=""> SDL (processing)
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="SDL (processing) From Date" id="">
+                        <input type="date" name="SDL (processing) To Date"  id="">
+                    </div>
                     <input type="checkbox" name="UIF (processing)" id=""> UIF (processing)
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="UIF (processing) From Date" id="">
+                        <input type="date" name="UIF (processing) To Date"  id="">
+                    </div>
                     <input type="checkbox" name="Accounting" id=""> Accounting
-                    <br><br>
-                    <input type="checkbox" name="Customs(import/export) Registration" id=""> Customs(import/export)Registration
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="Accounting From Date" id="">
+                        <input type="date" name="Accounting To Date"  id="">
+                    </div>
+                    <input type="checkbox" name="Customs(import/export) Registration" id="" class="long-text"> Customs(import/export)Registration
+                    <br>
+                    <div>
+                        <input type="date" name="Customs(import/export) From Date" id="">
+                        <input type="date" name="Customs(import/export) To Date"  id="">
+                    </div>
                     <input type="checkbox" name="Processing" id=""> Processing
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="Processing From Date" id="">
+                        <input type="date" name="Processing To Date"  id="">
+                    </div>
                     <input type="checkbox" name="WIP & Deb" id=""> WIP & Deb
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="WIP & Deb From Date" id="">
+                        <input type="date" name="WIP & Deb To Date"  id="">
+                    </div>
                     <input type="checkbox" name="Consulting" id=""> Consulting
-                    <br><br>
+                    <br>
+                    <div>
+                        <input type="date" name="Consulting From Date" id="">
+                        <input type="date" name="Consulting To Date"  id="">
+                    </div>
                     <input type="checkbox" name="Liquor Licence" id=""> Liquor Licence
+                    <br>
+                    <div>
+                        <input type="date" name="Liquor Licence From Date" id="">
+                        <input type="date" name="Liquor Licence To Date"  id="">
+                    </div>
 
                 </div>
 
             </div>
 
             <button type="submit" class="next-buttons next-button2">
-                Next
+                Submit
             </button>
 
         </div>

@@ -1,3 +1,6 @@
+
+
+
 function expand1(){
 
     var paragraph = document.querySelector('.service-content-1');
@@ -129,6 +132,7 @@ function teamBio3(){
 
 function radioIndividual(){
     document.body.querySelector('.rsa-id').style.display = "block";
+    document.body.querySelector('.box2-individual-options').style.display = "block";
     document.body.querySelector('.box2-organization-options').style.display = "none";
     document.body.querySelector('.box3-div').style.display = "none";
 }
@@ -138,12 +142,4 @@ function radioOrganization(){
     document.body.querySelector('.box2-individual-options').style.display = "none";
     document.body.querySelector('.box2-organization-options').style.display = "block";
     document.body.querySelector('.box3-div').style.display = "grid";
-}
-
-function nextButton1(){
-    if (document.querySelector('.individual-radio') == checked){
-        document.querySelector('.box2-div').style.display = "block";
-        document.querySelector('.box2-grid').style.display = "block";
-        document.querySelector('.box2-individual-options').style.display = "block";
-    }
 }

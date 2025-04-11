@@ -112,7 +112,7 @@ body{
     gap: 10px;
 }
 
-input[type=text], input[type=number], input[type=email]{
+input[type=text], input[type=number], input[type=email], input[type=date]{
     border: none;
     border-radius: 10px;
     padding: 10px;
@@ -154,21 +154,30 @@ select{
     width: 100%;
 }
 
-.box2-div{
-    display: none;
-}
-
 .box2-individual-options{
-    display: none;
+    padding-bottom: 40px;
 }
 
-.box2-organization-options{
-    display: none;
+.box2-organization-options input{
+    margin-block: -50px 30px;
+}
+
+.long-text{
+    margin: 0 !important;
 }
 
 .box3-div{
     display: none;
     gap: 10px;
+}
+
+
+
+.info{
+    padding: 10px;
+    background-color: #949494;
+    border: 1px solid #fff;
+    margin-bottom: 30px;
 }
 
 
