@@ -86,3 +86,64 @@ function expand8(){
     expander8.style.rotate = "180deg";
 
 }
+
+//Accounting Team Section
+
+function teamBio1(){
+
+    document.body.querySelector('.nhlanhla-description').style.opacity = "1";
+    document.body.querySelector('.ndumi-description').style.opacity = "0";
+    document.body.querySelector('.murcha-description').style.opacity = "0";
+
+    document.body.querySelector('.dot1').style.opacity = "1";
+    document.body.querySelector('.dot2').style.opacity = "0";
+    document.body.querySelector('.dot3').style.opacity = "0";
+
+}
+
+function teamBio2(){
+
+    document.body.querySelector('.nhlanhla-description').style.opacity = "0";
+    document.body.querySelector('.ndumi-description').style.opacity = "1";
+    document.body.querySelector('.murcha-description').style.opacity = "0";
+
+    document.body.querySelector('.dot1').style.opacity = "0";
+    document.body.querySelector('.dot2').style.opacity = "1";
+    document.body.querySelector('.dot3').style.opacity = "0";
+
+}
+
+function teamBio3(){
+
+    document.body.querySelector('.nhlanhla-description').style.opacity = "0";
+    document.body.querySelector('.ndumi-description').style.opacity = "0";
+    document.body.querySelector('.murcha-description').style.opacity = "1";
+
+    document.body.querySelector('.dot1').style.opacity = "0";
+    document.body.querySelector('.dot2').style.opacity = "0";
+    document.body.querySelector('.dot3').style.opacity = "1";
+
+}
+
+//Form Page Section
+
+function radioIndividual(){
+    document.body.querySelector('.rsa-id').style.display = "block";
+    document.body.querySelector('.box2-organization-options').style.display = "none";
+    document.body.querySelector('.box3-div').style.display = "none";
+}
+
+function radioOrganization(){
+    document.body.querySelector('.rsa-id').style.display = "none";
+    document.body.querySelector('.box2-individual-options').style.display = "none";
+    document.body.querySelector('.box2-organization-options').style.display = "block";
+    document.body.querySelector('.box3-div').style.display = "grid";
+}
+
+function nextButton1(){
+    if (document.querySelector('.individual-radio') == checked){
+        document.querySelector('.box2-div').style.display = "block";
+        document.querySelector('.box2-grid').style.display = "block";
+        document.querySelector('.box2-individual-options').style.display = "block";
+    }
+}

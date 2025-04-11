@@ -1,189 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-67RLTDGN67"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-67RLTDGN67');
-        </script>
-    <script src="https://kit.fontawesome.com/a87d58c14d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LemonSalt Organisation</title>
-    <meta name="description" content="LemonSalt&#8482; is a dynamic goods and services provider.">
-    <link rel="stylesheet" href="css/index-styles.css">
+    <title>Accounting Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
-    <div class="shapes">
+    <div class="nav">
 
-        <div id="circle"></div>
-        <div id="square"></div>
-        <div id="circle-lines"></div>
+        <img src="icons/logo-white (1).webp" alt="">
 
-        <div id="circle1"></div>
-        <div id="square1"></div>
-        <div id="circle-lines1"></div>
+        <div class="nav-bar">
+            <a href="./">Home</a>
+            <a href="#about-us">About</a>
+            <a href="#services">Services</a>
+            <a href="#about-us">Team</a>
+            <a href="#footer">Contact</a>
+        </div>
+        
+    </div>
+
+    <div class="hero">
+
+        <img id="hero-bg" src="images/hero img.jpg" alt="">
+
+        <div class="hero-grid">
+
+            <div class="hero-top"></div>
+
+            <div class="hero-bottom">
+                <p class="hero-header">
+                    Balancing Your Books, Growing Your Business
+                </p>
+    
+                <p class="hero-description">
+                    LemonSalt (Pty) Ltd was established in 2020 and has seen
+                    gradual growth in the last five years. At LemonSalt we provide affordable
+                    professional service, tailored to your business needs. We take pride in everything we
+                    do and that guarantees customer satisfaction
+                </p>
+    
+                <button onclick="location.href='#form'" id="hero-btn-1">
+                    Get Started
+                </button>
+    
+                <button onclick="location.href='#footer'" id="hero-btn-2">
+                    Contact Us
+                </button>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="nav">
+    <div id="vision">
 
-        <div class="menu-btn-div">
+        <p class="vision-header">
+            Vision
+        </p>
 
-            <div class="menu-btn">
+        <p class="vision-description">
+            We want to be a respected company that provides excellent service for small to medium-sized businesses.
+        </p>
 
-                <i class="fa-solid fa-bars"></i>
+    </div>
 
-                <div class="links-div">
+    <div id="qualities-grid">
 
-                    <a href="index.html">Home</a>
-                    <a href="about-us.html">About Us</a>
-                    <a href="contact-us.html">Contact Us</a>
+        <div class="quality-blocks">
 
+            <div class="div1">
+                <img src="icons/Integrity Icon.png" alt="">
+            </div>
+
+            <div class="div2">
+                <span>
+                    Integrity
+                </span>
+                We uphold honesty and ethical standards in all our services.
+            </div>
+
+        </div>
+
+        <div class="quality-blocks">
+
+            <div class="div1">
+                <img src="icons/Transparency Icon.png" alt="">
+            </div>
+
+            <div class="div2">
+                <span>
+                    Transparency
+                </span>
+                Clear, open communication for complete financial clarity.
+            </div>
+
+        </div>
+
+        <div class="quality-blocks">
+
+            <div class="div1">
+                <img src="icons/Prudence Icon.png" alt="">
+            </div>
+
+            <div class="div2">
+                <span>
+                    Prudence
+                </span>
+                Thoughtful and responsible financial decision-making.
+            </div>
+
+        </div>
+
+        <div class="quality-blocks">
+
+            <div class="div1">
+                <img src="icons/Collab Icon.png" alt="">
+            </div>
+
+            <div class="div2">
+                <span>
+                    Collaboration
+                </span>
+                Partnering with clients for long-term success.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="about-us">
+
+        <p class="about-us-header">
+            About Us
+        </p>
+
+        <p class="about-us-decription">
+            Our team is made up of professionals with years of experience in their respective fields.
+        </p>
+
+        <div class="team-grid">
+
+            <div class="team-blocks" onclick="teamBio1()">
+
+                <img class="team-images old-lady" src="images/Ndumi.jpg" alt="">
+
+                <div class="dot1"></div>
+
+                <div class="team-descriptions nhlanhla-description">
+                    <p class="team-name">
+                        Nhlanhla Leshaba
+                    </p>
+                    <p class="team-position">
+                        Head of Operations & Director
+                    </p>
+                    <p class="team-description">
+                        Nhlanhla Leshaba is the esteemed Head of Operations and a Director at LemonSalt (Pty) Ltd, where his exceptional problem-solving abilities and leadership skills drive operational excellence across the company...
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="team-blocks" onclick="teamBio2()">
+
+                <img class="team-images" src="images/Ndumi.jpg" alt="">
+
+                <div class="dot2"></div>
+
+                <div class="team-descriptions ndumi-description">
+                    <p class="team-name">
+                        Nondumiso Leshaba
+                    </p>
+                    <p class="team-position">
+                        Managing Director
+                    </p>
+                    <p class="team-description">
+                        Nondumiso Leshaba is a distinguished Chartered Bookkeeper and the visionary. Managing Director of LemonSalt (Pty) Ltd, a dynamic company known for its
+                        innovative solutions and creative approach to business...
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="team-blocks" onclick="teamBio3()">
+
+                <img class="team-images old-lady" src="images/Old Lady.jpg" alt="">
+
+                <div class="dot3"></div>
+
+                <div class="team-descriptions murcha-description">
+                    <p class="team-name">
+                        Murcha Theunis
+                    </p>
+                    <p class="team-position">
+                        Director and Tax Specialist
+                    </p>
+                    <p class="team-description">
+                        Murcha Theunis is a highly respected Tax Specialist and Director at LemonSalt (Pty) Ltd, where she leverages her extensive expertise to navigate the complexities of tax regulations and drive strategic growth...
+                    </p>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="lemonsalt-bold">
-
-            <a href="index.html">LemonSalt</a>
-            
-        </div>
-
-        <div class="nav-bar">
-
-            <a href="index.html">Home</a>
-            <a href="about-us.html">About Us</a>
-            <a href="contact-us.html">Contact Us</a>
-
-        </div>
-
     </div>
 
-    <div class="home-div">
+    <div id="services">
 
-        <img id="leaves-background-img" src="images/aedrian-GqAoJtR29AM-unsplash-mid.WebP" alt="Background image of a bush">
-
-        <img id="home-div-img" src="icons/logo-white.WebP" alt="LemonSalt Logo">
-
-    </div>
-
-    <p class="description">
-        Welcome. At LemonSalt we offer a wide range of services including hygiene & wellness.
-        Browse our sub-divisions below.
-    </p>
-
-    <p class="description1">
-        Welcome to <span>LemonSalt</span>
-    </p>
-    
-    <div class="sub-divisions-container">
-
-        <p class="sub-header-1">
-            Sub Divisions
+        <p class="services-header">
+            Our Services
         </p>
 
-        <p class="sub-header-2">
-            Explore our Sub Divisions
-        </p>
+        <div class="services-grid">
 
-        <div class="sub-divisions-div">
+            <div class="services-grid-blocks">
 
-            <div class="sub">
-    
-                <button id="btn1" type="button" target="_blank" onclick="location.href='./intensive-cleaning'">
-                    <img id="sub-img" src="icons/intensive-cleaning-low.WebP">
-                </button>
+                <p class="services-titles">
+                    Accounting Services
+                </p>
 
-                <button id="btn2" type="button" target="_blank" onclick="location.href='./intensive-cleaning'">
-                    Visit
-                </button>
-    
+                <ul>
+                    <li>Bookkeeping</li>
+                    <li>Statements</li>
+                    <li>Financial Analysis</li>
+                    <li>Payroll</li>
+                </ul>
+
             </div>
-    
-            <div class="sub">
-    
-                <button id="btn1" type="button" target="_blank" onclick="location.href='./mental-health'">
-                    <img id="sub-img" src="icons/mental-health-low.WebP" alt="">
-                </button>
 
-                <button id="btn2" type="button" target="_blank" onclick="location.href='./mental-health'">
-                    Visit
-                </button>
-    
-            </div>
-    
-            <div class="sub">
-    
-                <button id="btn1" type="button" target="_blank" onclick="location.href='./coffee-box'">
-                    <img id="sub-img" src="icons/coffee-box-low.WebP" alt="">
-                </button>
+            <div class="services-grid-blocks">
 
-                <button id="btn2" type="button" target="_blank" onclick="location.href='./coffee-box'">
-                    Visit
-                </button>
-    
-            </div>
-    
-            <div class="sub">
-    
-                <button id="btn1" type="button" target="_blank" onclick="location.href='./architects'">
-                    <img id="sub-img" src="icons/architects-low.WebP" alt="">
-                </button>
+                <p class="services-titles">
+                    Tax Services
+                </p>
 
-                <button id="btn2" type="button" target="_blank" onclick="location.href='./architects'">
-                    Visit
-                </button>
-    
+                <ul>
+                    <li>Income Tax Returns</li>
+                    <li>VAT processing, filing & registration</li>
+                    <li>Employee Taxes</li>
+                    <li>Provisional Tax</li>
+                </ul>
+
             </div>
-    
+
+            <div class="services-grid-blocks">
+
+                <p class="services-titles">
+                    Consulting Services
+                </p>
+
+                <ul>
+                    <li>Tax advisory</li>
+                    <li>Financial planning</li>
+                    <li>Business consulting</li>
+                    <li>Risk
+                        management.</li>
+                </ul>
+
+            </div>
+
+            <div class="services-grid-blocks">
+
+                <p class="services-titles">
+                    Secretarial Services
+                </p>
+
+                <ul>
+                    <li>CIPC</li>
+                    <li>Annual Returns</li>
+                    <li>Company registration</li>
+                </ul>
+
+            </div>
+
         </div>
 
     </div>
+    
+    <div id="form">
 
-    <div class="footer">
-
-        <p class="rights-reserved">
-            @2023
+        <p class="form-header">
+            Get Started
         </p>
 
-        <br>
-
-        <p class="footer-bold">
-            Contact Us
+        <p class="form-description">
+            Take the First Step Towards Financial Success
         </p>
 
-        <p>
-            <i class="fa-regular fa-envelope"></i>
-            lemonsaltinc@gmail.com
-        </p>
-
-        <p>
-            <i class="fa-sharp fa-solid fa-phone"></i>
-            076 770 2652
-        </p>
-
-        <p>
-            <i class="fa-brands fa-whatsapp"></i>
-            068 196 0955
-        </p>
-
-        <br>
-
-        <p class="developer">
-            This website was developed by
-            <a href="https://www.mzobesbulelo.co.za/">Sbulelo Mzobe</a>
-        </p>
+        <button onclick="location.href='./web-form'">
+            Get Started
+        </button>
 
     </div>
-    
+
+    <div id="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-left">
+                <a href="#services">Services</a>
+                <a href="#about-us">About Us</a>
+                <a href="#team">Our Team</a>
+            </div>
+
+            <div id="footer-center">
+                <p class="footer-center-headers yerrr1">
+                    Contact Us
+                </p>
+                <p class="footer-grays">
+                    +27 13 140 0156
+                </p>
+                <p class="footer-grays">
+                    info@lemon-salt.co.za
+                </p>
+                <p class="footer-center-headers yerrr2">
+                    Visit Us
+                </p>
+                <p class="footer-grays">
+                    5 Dolorite Crescent
+                    <br>
+                    Five @ Dolorite
+                    <br>
+                    Aerorand
+                    <br>
+                    Middelburg
+                    <br>
+                    1055
+                </p>
+            </div>
+
+            <div class="footer-right">
+
+                <a href="./ts-cs">Terms of Use</a>
+                <a href="./data-policy">Data collection policy</a>
+                <a href="https://policies.google.com/technologies/partner-sites?hl=en" target="_blank">Google’s Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                @Yowboii 2025, All Rights Reserved
+            </div>
+            <div class="footer-bottom-right">
+                <a href="./privacy-policy">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
 </body>
 </html>

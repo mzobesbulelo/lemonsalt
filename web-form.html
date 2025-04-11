@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="css/web-form-style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="nav">
+
+        <img src="icons/LS FS.png" alt="">
+
+        <div class="nav-bar">
+            <a href="./">Home</a>
+            <a href="#about-us">About</a>
+            <a href="#services">Services</a>
+            <a href="#about-us">Team</a>
+            <a href="#footer">Contact</a>
+        </div>
+        
+    </div>
+
+
+    <p class="hero-header">
+        You’re a step away from financial success.
+        <br>
+        <span>Please fill in the following form</span>
+    </p>
+
+    <form action="" method="post">
+
+        <div class="box-divs box1-div">
+
+            <p class="titles">
+                Contact Details
+            </p>
+
+            <div class="box-grids box1-grid">
+
+                <div class="options-div">
+
+                    <div class="individual-radio">
+                        <input type="radio" name="I am a/an" value="Individual" id="individual" onclick='radioIndividual()' checked> Individual
+                    </div>
+    
+                    <div class="organization-radio">
+                        <input type="radio" name="I am a/an" id="organization" onclick='radioOrganization()'> Organization
+                    </div>
+
+                </div>
+
+                <div class="box1-individual-options">
+
+                    <input type="text" name="Full Name" placeholder="Full Name*" class="box1Inputs" required>
+                    <input type="text" name="Income Tax ID" placeholder="Income Tax ID*" class="box1Inputs" >
+                    <input type="number" name="RSA ID" minlength="13" maxlength="13" placeholder="RSA ID*" class="box1Inputs rsa-id" required>
+                    <input type="number" name="Phone" minlength="10" maxlength="10" placeholder="Phone*" class="box1Inputs" required>
+                    <input type="email" name="Email" placeholder="Email*" class="box1Inputs" required>
+
+                </div>
+
+            </div>
+
+            <button class="next-buttons next-button1" onclick="nextButton1()">
+                Next
+            </button>
+
+        </div>
+
+        <div class="box-divs box3-div">
+
+            <select name="" id="" required>
+                <option value="CC" disabled selected>Entity Type*</option>
+                <option value="CC">CC</option>
+                <option value="(PTY) LTD">(PTY) LTD</option>
+                <option value="Non-Profit">Non-Profit</option>
+                <option value="LLC">LLC</option>
+            </select>
+
+            <input type="text" placeholder="Company Name*" required>
+            <input type="number" placeholder="Registration no.*" required>
+            <input type="number" placeholder="Income Tax*" required>
+            <input type="text" placeholder="NPO*" required>
+            <input type="number" placeholder="VAT">
+            <input type="text" placeholder="PAYE">
+            <input type="text" placeholder="UIF">
+            <input type="text" placeholder="SDL">
+            <input type="text" placeholder="Compensation Fund">
+
+            <button class="next-buttons next-button3">
+                Next
+            </button>
+
+        </div>
+
+        <div class="box-divs box2-div">
+
+            <p class="titles">
+                How can we help you today?
+            </p>
+
+            <div class="box-grids box2-grid">
+
+                <div class="box2-individual-options">
+
+                    <input type="checkbox" name="Are we keeping the original statutory docs?"> Are we keeping the original statutory docs?
+                    <br><br>
+                    <input type="checkbox" name="Provisional Tax" id=""> Provisional Tax
+                    <br><br>
+                    <input type="checkbox" name="Income Tax" id=""> Income Tax
+                    <br><br>
+                    <input type="checkbox" name="Other" id=""> Other, please specify:
+                    <br><br>
+                    <textarea name="More info of 'Other:'" id=""></textarea>
+
+                </div>
+
+                <div class="box2-organization-options">
+
+                    <input type="checkbox" name="Are we keeping the original statutory docs?"> Are we keeping the original statutory docs?
+                    <br><br>
+                    <input type="checkbox" name="N/C Director?"> N/C Director?
+                    <br><br>
+                    <input type="checkbox" name="Provisional Tax" id=""> Provisional Tax
+                    <br><br>
+                    <input type="checkbox" name="Income Tax" id=""> Income Tax
+                    <br><br>
+                    <input type="checkbox" name="VAT (processing)" id=""> VAT (processing)
+                    <br><br>
+                    <input type="checkbox" name="PAYE (processing)" id=""> PAYE (processing)
+                    <br><br>
+                    <input type="checkbox" name="SDL (processing)" id=""> SDL (processing)
+                    <br><br>
+                    <input type="checkbox" name="UIF (processing)" id=""> UIF (processing)
+                    <br><br>
+                    <input type="checkbox" name="Accounting" id=""> Accounting
+                    <br><br>
+                    <input type="checkbox" name="Customs(import/export) Registration" id=""> Customs(import/export)Registration
+                    <br><br>
+                    <input type="checkbox" name="Processing" id=""> Processing
+                    <br><br>
+                    <input type="checkbox" name="WIP & Deb" id=""> WIP & Deb
+                    <br><br>
+                    <input type="checkbox" name="Consulting" id=""> Consulting
+                    <br><br>
+                    <input type="checkbox" name="Liquor Licence" id=""> Liquor Licence
+
+                </div>
+
+            </div>
+
+            <button type="submit" class="next-buttons next-button2">
+                Next
+            </button>
+
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+    <div id="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-left">
+                <a href="#services">Services</a>
+                <a href="#about-us">About Us</a>
+                <a href="#team">Our Team</a>
+            </div>
+
+            <div id="footer-center">
+                <p class="footer-center-headers yerrr1">
+                    Contact Us
+                </p>
+                <p class="footer-grays">
+                    +27 13 140 0156
+                </p>
+                <p class="footer-grays">
+                    info@lemon-salt.co.za
+                </p>
+                <p class="footer-center-headers yerrr2">
+                    Visit Us
+                </p>
+                <p class="footer-grays">
+                    5 Dolorite Crescent
+                    <br>
+                    Five @ Dolorite
+                    <br>
+                    Aerorand
+                    <br>
+                    Middelburg
+                    <br>
+                    1055
+                </p>
+            </div>
+
+            <div class="footer-right">
+
+                <a href="./ts-cs">Terms of Use</a>
+                <a href="./data-policy">Data collection policy</a>
+                <a href="https://policies.google.com/technologies/partner-sites?hl=en" target="_blank">Google’s Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                @Yowboii 2025, All Rights Reserved
+            </div>
+            <div class="footer-bottom-right">
+                <a href="./privacy-policy">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
