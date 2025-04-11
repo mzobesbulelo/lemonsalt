@@ -164,6 +164,7 @@ select{
 
 .long-text{
     margin: 0 !important;
+    margin-left: 4px !important;
 }
 
 .box3-div{
