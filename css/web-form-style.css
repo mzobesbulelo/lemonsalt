@@ -137,6 +137,17 @@ input::placeholder{
     padding-bottom: 100px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .next-buttons{
     border: none;
     border-radius: 10px;
@@ -386,6 +397,10 @@ select{
 
     input{
         margin: 0 !important;
+    }
+
+    .box2-div{
+        padding-bottom: 140px;
     }
 
 
