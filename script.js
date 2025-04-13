@@ -132,7 +132,7 @@ function teamBio3(){
 
 function radioIndividual(){
     document.body.querySelector('.rsa-id').style.display = "block";
-    document.body.querySelector('.box2-individual-options').style.display = "block";
+    document.body.querySelector('.box2-individual-options').style.display = "grid";
     document.body.querySelector('.box2-organization-options').style.display = "none";
     document.body.querySelector('.box3-div').style.display = "none";
 }
@@ -140,6 +140,6 @@ function radioIndividual(){
 function radioOrganization(){
     document.body.querySelector('.rsa-id').style.display = "none";
     document.body.querySelector('.box2-individual-options').style.display = "none";
-    document.body.querySelector('.box2-organization-options').style.display = "block";
+    document.body.querySelector('.box2-organization-options').style.display = "grid";
     document.body.querySelector('.box3-div').style.display = "grid";
 }
