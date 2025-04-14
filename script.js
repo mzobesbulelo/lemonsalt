@@ -135,6 +135,16 @@ function radioIndividual(){
     document.body.querySelector('.box2-individual-options').style.display = "grid";
     document.body.querySelector('.box2-organization-options').style.display = "none";
     document.body.querySelector('.box3-div').style.display = "none";
+
+    document.querySelectorAll('.required-individual').forEach(function(element) {
+        element.setAttribute("required", "true");
+      });
+
+    document.querySelectorAll('.required-org').forEach(function(element) {
+        element.removeAttribute("required");
+      });
+
+
 }
 
 function radioOrganization(){
@@ -142,4 +152,12 @@ function radioOrganization(){
     document.body.querySelector('.box2-individual-options').style.display = "none";
     document.body.querySelector('.box2-organization-options').style.display = "grid";
     document.body.querySelector('.box3-div').style.display = "grid";
+    
+    document.querySelectorAll('.required-individual').forEach(function(element) {
+        element.removeAttribute("required");
+      });
+
+    document.querySelectorAll('.required-org').forEach(function(element) {
+        element.setAttribute("required", "true");
+      });
 }

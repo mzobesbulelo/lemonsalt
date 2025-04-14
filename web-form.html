@@ -30,7 +30,7 @@
         <span>Please fill in the following form</span>
     </p>
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mjkylqzl" method="post">
 
         <div class="box-divs box1-div">
 
@@ -54,11 +54,11 @@
 
                 <div class="box1-individual-options">
 
-                    <input type="text" name="Full Name" placeholder="Full Name*" required>
-                    <input type="text" name="Income Tax ID" placeholder="Income Tax ID*" required>
-                    <input type="number" name="RSA ID" minlength="13" maxlength="13" placeholder="RSA ID*" class="rsa-id" required>
-                    <input type="number" name="Phone" minlength="10" maxlength="10" placeholder="Phone*" required>
-                    <input type="email" name="Email" placeholder="Email*" required>
+                    <input type="text" name="Full Name" placeholder="Full Name*" class="required-individual" required>
+                    <input type="text" name="Income Tax ID" placeholder="Income Tax ID*" class="required-individual" required>
+                    <input type="number" name="RSA ID" placeholder="RSA ID*" class="rsa-id required-org" required>
+                    <input type="number" name="Phone" placeholder="Phone*" class="required-individual" required>
+                    <input type="email" name="Email" placeholder="Email*" class="required-individual" required>
 
                 </div>
 
@@ -68,7 +68,7 @@
 
         <div class="box-divs box3-div">
 
-            <select name="" id="select" required>
+            <select name="" id="select" class="required-org" required>
                 <option value="Please Select" disabled selected>Entity Type*</option>
                 <option value="Company">Company</option>
                 <option value="Close Corporation">Close Corporation</option>
@@ -76,10 +76,10 @@
                 <option value="Body Corporation">Body Corporation</option>
             </select>
 
-            <input type="text" name="Company Name" placeholder="Company Name*" required>
-            <input type="number" name="Registration no." placeholder="Registration no.*" required>
-            <input type="number" name="Income Tax" placeholder="Income Tax*" required>
-            <input type="text" name="NPO" placeholder="NPO*" required>
+            <input type="text" name="Company Name" placeholder="Company Name*" class="required-org">
+            <input type="number" name="Registration no." placeholder="Registration no.*" class="required-org">
+            <input type="number" name="Income Tax" placeholder="Income Tax*" class="required-org">
+            <input type="text" name="NPO" placeholder="NPO">
             <input type="number" name="VAT No." placeholder="VAT No.">
             <input type="text" name="PAYE" placeholder="PAYE">
             <input type="text" name="UIF" placeholder="UIF">
