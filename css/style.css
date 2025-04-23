@@ -181,7 +181,7 @@ body{
 .team-grid{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 250px;
+    grid-auto-columns: 280px;
     column-gap: 15px;
     overflow-x: auto;
     overflow-y: hidden;
