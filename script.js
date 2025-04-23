@@ -94,37 +94,51 @@ function expand8(){
 
 function teamBio1(){
 
-    document.body.querySelector('.nhlanhla-description').style.opacity = "1";
-    document.body.querySelector('.ndumi-description').style.opacity = "0";
-    document.body.querySelector('.murcha-description').style.opacity = "0";
+    if(document.body.style.width > "768px"){
+        document.body.querySelector('.nhlanhla-description').style.opacity = "1";
+        document.body.querySelector('.ndumi-description').style.opacity = "0";
+        document.body.querySelector('.murcha-description').style.opacity = "0";
 
-    document.body.querySelector('.dot1').style.opacity = "1";
-    document.body.querySelector('.dot2').style.opacity = "0";
-    document.body.querySelector('.dot3').style.opacity = "0";
+        document.body.querySelector('.dot1').style.opacity = "1";
+        document.body.querySelector('.dot2').style.opacity = "0";
+        document.body.querySelector('.dot3').style.opacity = "0";
 
+    }else{
+        window.open("https://www.lemon-salt.co.za/team#nhlanhla");
+    }
 }
 
 function teamBio2(){
 
-    document.body.querySelector('.nhlanhla-description').style.opacity = "0";
-    document.body.querySelector('.ndumi-description').style.opacity = "1";
-    document.body.querySelector('.murcha-description').style.opacity = "0";
+    if(document.body.style.width > "768px"){
+        document.body.querySelector('.nhlanhla-description').style.opacity = "0";
+        document.body.querySelector('.ndumi-description').style.opacity = "1";
+        document.body.querySelector('.murcha-description').style.opacity = "0";
 
-    document.body.querySelector('.dot1').style.opacity = "0";
-    document.body.querySelector('.dot2').style.opacity = "1";
-    document.body.querySelector('.dot3').style.opacity = "0";
+        document.body.querySelector('.dot1').style.opacity = "0";
+        document.body.querySelector('.dot2').style.opacity = "1";
+        document.body.querySelector('.dot3').style.opacity = "0";
+
+    }else{
+        window.open("https://www.lemon-salt.co.za/team#nondumiso");
+    }
 
 }
 
 function teamBio3(){
 
-    document.body.querySelector('.nhlanhla-description').style.opacity = "0";
-    document.body.querySelector('.ndumi-description').style.opacity = "0";
-    document.body.querySelector('.murcha-description').style.opacity = "1";
+    if(document.body.style.width > "768px"){
+        document.body.querySelector('.nhlanhla-description').style.opacity = "0";
+        document.body.querySelector('.ndumi-description').style.opacity = "0";
+        document.body.querySelector('.murcha-description').style.opacity = "1";
 
-    document.body.querySelector('.dot1').style.opacity = "0";
-    document.body.querySelector('.dot2').style.opacity = "0";
-    document.body.querySelector('.dot3').style.opacity = "1";
+        document.body.querySelector('.dot1').style.opacity = "0";
+        document.body.querySelector('.dot2').style.opacity = "0";
+        document.body.querySelector('.dot3').style.opacity = "1";
+
+    }else{
+        window.open("https://www.lemon-salt.co.za/team#murcha");
+    }
 
 }
 

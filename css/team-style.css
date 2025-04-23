@@ -1,0 +1,289 @@
+/* Fundamentals Start */
+
+:root{
+
+    --paragraph-size: 16px;
+    --sub-header-size: 24px;
+    --header-size: 32px;
+
+    --pc-paragraph-size: 32px;
+    --pc-sub-header-size: 48px;
+    --pc-header-size: 64px;
+
+
+    --inline-padding: 20px;
+    --block-padding: 50px;
+
+
+    --primary-color: #C2C2C2;
+    --secondary-color: #506C53;
+    --third-color: #fff;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    text-underline-offset: 3px;
+}
+
+button{
+    cursor: pointer;
+    box-shadow: 0 5px 3px #00000014;
+    transition: .18s;
+}
+
+button:hover{
+    scale: 105%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+}
+
+
+/* Fundamentals End */
+
+
+.nav{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.nav img{
+    width: 120px;
+    margin-top: -20px;
+    margin-left: 0px;
+}
+
+.hero-header{
+    margin: 200px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--header-size);
+    color: var(--secondary-color);
+}
+
+.team-grid{
+    display: grid;
+    gap: 20px;
+    padding-top: var(--block-padding);
+}
+
+.team-member-wrapper{
+    display: grid;
+    gap: 30px;
+    margin-top: 50px;
+    grid-template-rows: 150px auto auto;
+    text-align: center;
+}
+
+.team-member-wrapper img{
+    width: 150px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.team-member-wrapper p{
+    margin: 0;
+}
+
+.name-position{
+    display: grid;
+    gap: 10px;
+}
+
+.name{
+    font-size: var(--sub-header-size);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.position{
+    color: #3E3E3E;
+}
+
+.bio{
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    padding: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+#footer{
+    background-color: #D9D9D9;
+    padding: var(--block-padding) var(--inline-padding);
+}
+
+.footer-grid{
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+
+#footer a{
+    margin-bottom: 40px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+    display: grid;
+    gap: 10px;
+}
+
+.footer-center-headers{
+    font-size: 20px;
+}
+
+.yerrr1{
+    margin-top: -10px;
+}
+
+.yerrr2{
+    margin-top: 40px;
+}
+
+.footer-grays{
+    color: #5F5F5F;
+}
+
+.footer-bottom, .footer-bottom-right a{
+    color: #5F5F5F !important;
+}
+
+.footer-bottom{
+    display: grid;
+    gap: 20px;
+    text-align: center;
+
+}
+
+
+
+
+@media (min-width: 769px){
+
+    :root{
+        --block-padding: 60px;
+        --inline-padding: 40px;
+    }
+
+    .nav-bar{
+        display: flex;
+        position: fixed;
+        background-color: #34343479;
+        top: 50px;
+        right: 100px;
+        width: 500px;
+        padding: 10px 20px;
+        border: 1px solid #cdcdcd;
+        border-radius: 20px;
+        justify-content: space-between;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-bar a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav img{
+        margin-top: 0;
+        margin-left: 90px;
+    }
+    
+    .team-member-wrapper img{
+        width: 200px;
+    }
+
+    .team-grid{
+        gap: 80px;
+        margin-bottom: 100px;
+    }
+
+    .team-member-wrapper{
+        gap: 40px;
+        grid-template-rows: 200px auto auto;
+    }
+
+    .position{
+        font-weight: bold;
+        color: #5c5c5c;
+    }
+
+    .bio{
+        max-width: 600px;
+        margin-inline: auto;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+
+
+
+
+    .footer-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #footer{
+        padding-block: 80px 40px;
+    }
+
+    .footer-grid{
+        max-width: 1100px;
+        margin-inline: auto;
+    }
+
+    .footer-left{
+        text-align: left;
+    }
+
+    .footer-right{
+        text-align: right;
+    }
+
+    .footer-bottom{
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #A2A2A2;
+        max-width: 1100px;
+        margin-inline: auto;
+    }
+
+    .footer-bottom-left{
+        text-align: left;
+    }
+
+    .footer-bottom-right{
+        text-align: right;
+    }
+
+
+}

@@ -191,7 +191,7 @@ body{
     margin-top: 50px;
     padding-inline: 10px;
     padding-bottom: 30px;
-    max-width: 800px;
+    max-width: 900px;
     margin-inline: auto;
 }
 
@@ -199,6 +199,7 @@ body{
     height: 100%;
     position: relative;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .team-images{
@@ -208,6 +209,7 @@ body{
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    border-radius: inherit;
 }
 
 .old-lady{
@@ -224,11 +226,13 @@ body{
     position: absolute;
     inset: auto 0 0 0;
     margin: auto 10px 10px 10px;
+    border-radius: 10px;
+    transition: .3s;
 }
 
 .ndumi-description,
 .murcha-description{
-    opacity: 0;
+    opacity: 1;
     transition: .3s;
 }
 
@@ -244,7 +248,7 @@ body{
     transition: .1s;
 }
 
-.dot2, .dot3{
+.dot1, .dot2, .dot3{
     opacity: 0;
 }
 
@@ -256,8 +260,8 @@ body{
 
 .team-position{
     margin-top: 5px;
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 13px;
+    color: #c4baa5;
 }
 
 #services{
@@ -428,6 +432,7 @@ body{
 
     .team-grid{
         padding-bottom: 0;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #about-us{
@@ -438,6 +443,35 @@ body{
         max-width: 996px;
         margin-inline: auto;
     }
+
+    .dot1, .dot2, .dot3{
+        opacity: 0;
+    }
+
+    .ndumi-description,
+    .murcha-description,
+    .nhlanhla-description{
+        opacity: 0;
+    }
+
+    .dot1:hover, .dot2:hover, .dot3:hover{
+        opacity: 1;
+    }
+
+    .position{
+        font-weight: bold;
+    }
+
+    .ndumi-description:hover,
+    .murcha-description:hover,
+    .nhlanhla-description:hover{
+        opacity: 1;
+        transition: .3s;
+    }
+
+
+
+
 
     .footer-grid{
         grid-template-columns: 1fr 1fr 1fr;
