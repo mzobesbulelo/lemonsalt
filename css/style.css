@@ -462,9 +462,9 @@ body{
         font-weight: bold;
     }
 
-    .ndumi-description:hover,
-    .murcha-description:hover,
-    .nhlanhla-description:hover{
+    .block1:hover .nhlanhla-description,
+    .block2:hover .ndumi-description, 
+    .block3:hover .murcha-description{
         opacity: 1;
         transition: .3s;
     }
