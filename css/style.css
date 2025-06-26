@@ -344,6 +344,12 @@ body{
     gap: 10px;
 }
 
+.footer-left{
+    grid-template-columns: 20px 20px 20px 20px;
+    gap: 40px;
+    margin-inline: auto;
+}
+
 .footer-center-headers{
     font-size: 20px;
 }
@@ -488,6 +494,9 @@ body{
 
     .footer-left{
         text-align: left;
+        grid-template-columns: none;
+        gap: 10px;
+        margin-inline: 0;
     }
 
     .footer-right{
