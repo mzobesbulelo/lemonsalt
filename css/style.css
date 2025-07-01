@@ -230,8 +230,7 @@ body{
     transition: .3s;
 }
 
-.ndumi-description,
-.murcha-description{
+.ndumi-description{
     opacity: 1;
     transition: .3s;
 }
