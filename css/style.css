@@ -298,6 +298,27 @@ body{
     line-height: 30px;
 }
 
+.article{
+    padding: 40px 20px 60px;
+    text-align: center;
+    max-width: 546px;
+    margin-inline: auto;
+}
+
+.article-header{
+    font-size: var(--header-size);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.article a{
+    color: #000;
+    background-color: #cdcdcd;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 #form{
     padding: var(--block-padding) var(--inline-padding);
     background-color: #F5DB9E;
