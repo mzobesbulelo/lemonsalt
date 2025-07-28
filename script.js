@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
     animationDiv7.style.marginTop = '40px';
   }
 
-  if (rect8.top <= 600 && !triggered8) {
+  if (rect8.top <= 700 && !triggered8) {
     triggered8 = true;
     animationDiv8.style.marginRight = '0';
     animationDiv8.style.opacity = '1';
