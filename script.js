@@ -1,94 +1,62 @@
 
+//Event Listeners
+
+let triggered1 = false;
+let triggered2 = false;
+let triggered4 = false;
+let triggered6 = false;
+let triggered8 = false;
+
+const animationDiv1 = document.getElementById('vision');
+const animationDiv2 = document.getElementById('qualities-grid');
+const animationDiv3 = document.querySelector('.quality-blocks');
+const animationDiv4 = document.getElementById('about-us');
+const animationDiv5 = document.querySelector('.team-grid');
+const animationDiv6 = document.getElementById('form');
+const animationDiv7 = document.getElementById('getStartedBtn');
+const animationDiv8 = document.getElementById('linkIcon');
+
+window.addEventListener('scroll', () => {
+  const rect1 = animationDiv1.getBoundingClientRect();
+  const rect2 = animationDiv2.getBoundingClientRect();
+  const rect4 = animationDiv4.getBoundingClientRect();
+  const rect6 = animationDiv6.getBoundingClientRect();
+  const rect8 = animationDiv8.getBoundingClientRect();
+
+  if (rect1.top <= 400 && !triggered1) {
+    triggered1 = true;
+    animationDiv1.style.opacity = '1';
+  }
+
+  if (rect2.top <= 200 && !triggered2) {
+    triggered2 = true;
+    animationDiv2.style.backgroundColor = '#DED8CC';
+    animationDiv3.style.backgroundColor = '#DED8CC';
+  }
+
+  if (rect4.top <= 200 && !triggered4) {
+    triggered4 = true;
+    animationDiv4.style.opacity = '1';
+    animationDiv4.style.marginTop = '0';
+    animationDiv5.style.paddingLeft = '10px';
+  }
+
+  if (rect6.top <= 200 && !triggered6) {
+    triggered6 = true;
+    animationDiv6.style.backgroundColor = '#F5DB9E';
+    animationDiv7.style.opacity = '1';
+    animationDiv7.style.marginTop = '40px';
+  }
+
+  if (rect8.top <= 400 && !triggered8) {
+    triggered8 = true;
+    animationDiv8.style.marginRight = '0';
+    animationDiv8.style.opacity = '1';
+  }
+
+});
 
 
-function expand1(){
-
-    var paragraph = document.querySelector('.service-content-1');
-    var expander1 = document.querySelector('.expander1');
-
-    expander1.style.opacity = "0";
-
-    paragraph.style.display = "block";
-    expander1.style.rotate = "180deg";
-
-}
-
-function expand2(){
-
-    var paragraph = document.querySelector('.service-content-2');
-    var expander2 = document.querySelector('.expander2');
-
-    expander2.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander2.style.rotate = "180deg";
-
-}
-
-function expand3(){
-
-    var paragraph = document.querySelector('.service-content-3');
-    var expander3 = document.querySelector('.expander3');
-
-    expander3.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander3.style.rotate = "180deg";
-
-}
-
-function expand4(){
-
-    var paragraph = document.querySelector('.service-content-4');
-    var expander4 = document.querySelector('.expander4');
-
-    expander4.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander4.style.rotate = "180deg";
-
-}
-
-function expand5(){
-
-    var paragraph = document.querySelector('.service-content-5');
-    var expander5 = document.querySelector('.expander5');
-
-    expander5.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander5.style.rotate = "180deg";
-
-}
-
-function expand6(){
-
-    var paragraph = document.querySelector('.service-content-6');
-    var expander6 = document.querySelector('.expander6');
-
-    expander6.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander6.style.rotate = "180deg";
-
-}
-
-function expand7(){
-
-    var paragraph = document.querySelector('.service-content-7');
-    var expander7 = document.querySelector('.expander7');
-
-    expander7.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander7.style.rotate = "180deg";
-
-}
-
-function expand8(){
-
-    var paragraph = document.querySelector('.service-content-8');
-    var expander8 = document.querySelector('.expander8');
-
-    expander8.style.opacity = "0";
-    paragraph.style.display = "block";
-    expander8.style.rotate = "180deg";
-
-}
 
 //Accounting Team Section
 

@@ -92,6 +92,31 @@ body{
 
 .hero-bottom{
     padding: var(--block-padding) var(--inline-padding);
+    margin-top: 40px;
+    opacity: 0;
+
+    animation-name: heroSlideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+}
+
+@keyframes heroSlideIn {
+    0%{
+        margin-top: -40px;
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        margin-bottom: 0;
+    }
+
 }
 
 .hero-header{
@@ -123,6 +148,8 @@ body{
 #vision{
     padding: var(--block-padding) var(--inline-padding);
     text-align: center;
+    opacity: 0;
+    transition: .5s;
 }
 
 .vision-header{
@@ -133,15 +160,15 @@ body{
 #qualities-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-    background-color: #DED8CC;
+    transition: .5s;
 }
 
 .quality-blocks{
     height: 350px;
-    background-color: #DED8CC;
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 20px;
+    transition: .5s;
 }
 
 .quality-blocks .div1{
@@ -163,6 +190,9 @@ body{
 #about-us{
     padding: var(--block-padding) var(--inline-padding);
     text-align: center;
+    margin-top: 60px;
+    opacity: 0;
+    transition: .5s;
 }
 
 .about-us-header{
@@ -189,10 +219,12 @@ body{
     height: 400px;
     position: relative;
     margin-top: 50px;
+    margin-inline: auto;
     padding-inline: 10px;
+    padding-left: 200px;
     padding-bottom: 30px;
     max-width: 900px;
-    margin-inline: auto;
+    transition: 1s;
 }
 
 .team-blocks{
@@ -298,6 +330,29 @@ body{
     line-height: 30px;
 }
 
+#form{
+    padding: var(--block-padding) var(--inline-padding);
+    text-align: center;
+    transition: .5s;
+}
+
+.form-header{
+    font-size: var(--header-size);
+    font-weight: bold;
+}
+
+#getStartedBtn{
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 3px #00000037;
+    margin-top: 100px;
+    opacity: 0;
+    transition: 1s;
+}
+
 .article{
     padding: 40px 20px 60px;
     text-align: center;
@@ -319,25 +374,10 @@ body{
     border-radius: 20px;
 }
 
-#form{
-    padding: var(--block-padding) var(--inline-padding);
-    background-color: #F5DB9E;
-    text-align: center;
-}
-
-.form-header{
-    font-size: var(--header-size);
-    font-weight: bold;
-}
-
-#form button{
-    padding: 10px 15px;
-    border: none;
-    background-color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 0 5px 3px #00000037;
-    margin-top: 40px;
+#linkIcon{
+    margin-right: -30px;
+    opacity: 0;
+    transition: 1s;
 }
 
 #footer{
