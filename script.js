@@ -46,21 +46,21 @@ window.addEventListener('scroll', () => {
 
   }
 
-  if (rect4.top <= 300 && !triggered4) {
+  if (rect4.top <= 500 && !triggered4) {
     triggered4 = true;
     animationDiv4.style.opacity = '1';
     animationDiv4.style.marginTop = '0';
     animationDiv5.style.paddingLeft = '10px';
   }
 
-  if (rect6.top <= 300 && !triggered6) {
+  if (rect6.top <= 400 && !triggered6) {
     triggered6 = true;
     animationDiv6.style.backgroundColor = '#F5DB9E';
     animationDiv7.style.opacity = '1';
     animationDiv7.style.marginTop = '40px';
   }
 
-  if (rect8.top <= 500 && !triggered8) {
+  if (rect8.top <= 600 && !triggered8) {
     triggered8 = true;
     animationDiv8.style.marginRight = '0';
     animationDiv8.style.opacity = '1';
