@@ -149,7 +149,8 @@ body{
     padding: var(--block-padding) var(--inline-padding);
     text-align: center;
     opacity: 0;
-    transition: .5s;
+    transition: 1s;
+    margin-top: 80px;
 }
 
 .vision-header{
@@ -224,7 +225,7 @@ body{
     padding-left: 200px;
     padding-bottom: 30px;
     max-width: 900px;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .team-blocks{
@@ -492,13 +493,13 @@ body{
         gap: 20px;
     }
 
-    .quality-blocks{
-        background-color: #DED8CC;
+    .team-grid{
+        padding-bottom: 10px;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .team-grid{
-        padding-bottom: 0;
-        grid-template-columns: 1fr 1fr;
+    .team-blocks{
+        border: #cdcdcd solid 2px;
     }
 
     #about-us{

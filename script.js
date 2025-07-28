@@ -9,7 +9,7 @@ let triggered8 = false;
 
 const animationDiv1 = document.getElementById('vision');
 const animationDiv2 = document.getElementById('qualities-grid');
-const animationDiv3 = document.querySelector('.quality-blocks');
+const animationDiv3 = document.querySelectorAll('.quality-blocks');
 const animationDiv4 = document.getElementById('about-us');
 const animationDiv5 = document.querySelector('.team-grid');
 const animationDiv6 = document.getElementById('form');
@@ -26,12 +26,24 @@ window.addEventListener('scroll', () => {
   if (rect1.top <= 400 && !triggered1) {
     triggered1 = true;
     animationDiv1.style.opacity = '1';
+    animationDiv1.style.marginTop = '0';
   }
 
-  if (rect2.top <= 200 && !triggered2) {
+  if (rect2.top <= 250 && !triggered2) {
+
     triggered2 = true;
-    animationDiv2.style.backgroundColor = '#DED8CC';
-    animationDiv3.style.backgroundColor = '#DED8CC';
+    
+    if(document.body.width < 769){
+        animationDiv2.style.backgroundColor = '#DED8CC';
+        animationDiv3.style.backgroundColor = '#DED8CC';
+    } else{
+        animationDiv2.style.backgroundColor = 'transparent';
+
+        animationDiv3.forEach((element) => {
+        element.style.backgroundColor = '#DED8CC';
+        });
+    }
+
   }
 
   if (rect4.top <= 200 && !triggered4) {
@@ -41,7 +53,7 @@ window.addEventListener('scroll', () => {
     animationDiv5.style.paddingLeft = '10px';
   }
 
-  if (rect6.top <= 200 && !triggered6) {
+  if (rect6.top <= 400 && !triggered6) {
     triggered6 = true;
     animationDiv6.style.backgroundColor = '#F5DB9E';
     animationDiv7.style.opacity = '1';
