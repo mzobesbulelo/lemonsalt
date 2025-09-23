@@ -373,6 +373,11 @@ select{
         margin-top: 0;
     }
 
+    .dates{
+        display: grid;
+        gap: 5px;
+    }
+
     .statutory-docs{
         grid-column: 1/3;
     }
@@ -407,7 +412,10 @@ select{
 
     .box2-div{
         padding-bottom: 140px;
+        max-width: 550px;
     }
+
+
 
 
 
