@@ -298,7 +298,7 @@ body{
 }
 
 #services{
-    padding: var(--block-padding) var(--inline-padding) 10px;
+    padding: var(--block-padding) var(--inline-padding);
 }
 
 .services-header{
@@ -307,8 +307,26 @@ body{
     text-align: center;
 }
 
+.video-section{
+    margin-top: var(--block-padding);
+    padding: 0 var(--inline-padding) var(--block-padding);
+    text-align: center;
+}
+
+.video-header{
+    font-size: var(--sub-header-size);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#intro-video{
+    width: 100%;
+    border-radius: 20px;
+    max-width: 450px;
+}
+
 .services-grid{
-    padding: var(--block-padding) var(--inline-padding);
+    padding: 0 var(--inline-padding) var(--block-padding);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -330,23 +348,6 @@ body{
 
 .services-grid li{
     line-height: 30px;
-}
-
-.video-section{
-    padding: 0 var(--inline-padding) var(--block-padding);
-    text-align: center;
-}
-
-.video-header{
-    font-size: var(--header-size);
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-#intro-video{
-    width: 100%;
-    border-radius: 20px;
-    max-width: 450px;
 }
 
 #form{
