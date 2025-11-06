@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/docs-style.css">
     <script src="https://kit.fontawesome.com/a87d58c14d.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a87d58c14d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- <div class="nav">
+    <div class="body-background"></div>
+
+    <div class="nav">
 
         <img src="icons/LS FS.png" alt="" onclick="location.href='./'">
 
@@ -23,6 +26,23 @@
         </div>
         
     </div>
+
+    <form id="docRequestForm" method="post" action="https://formspree.io/f/mwpwgnkn">
+
+        <div class="requestDocTopSection">
+            <p id="requestFormHeader">
+            Request Document
+            </p>
+            <i class="fa-solid fa-xmark" onclick="removeForm()"></i>
+        </div>
+
+        <input type="text" placeholder="Company Name" required>
+        <input type="number" placeholder="Tel" required>
+        <input type="email" placeholder="Email" required>
+
+        <button id="requestBTN" type="submit">Request</button>
+
+    </form>
 
     <div class="docs-container">
 
@@ -38,9 +58,9 @@
                     <i class="fa-solid fa-file"></i> PAIA MANUAL <span>&#91;1MB&#x5D;</span>
                 </a>
 
-                <a class="download-buttons" href="./downloadables/LemonSalt PAIA Manual.pdf" download="LemonSalt PAIA Manual.pdf">
-                    <i class="fa-solid fa-download"></i> DOWNLOAD
-                </a>
+                <button id="PAIA" class="download-buttons" onclick="popUpForm()">
+                    Request Document
+                </button>
 
             </div>
 
@@ -58,7 +78,7 @@
                 <a target="_blank" href="https://www.facebook.com/share/16nEeiJrST/"><i class="fa-brands fa-facebook-f"></i></a>
                 <a target="_blank" href="https://x.com/LemonSaltC29924?t=YxZw75QVsa1TRbA6BvF0yw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
                 <a target="_blank" href="https://wa.me/27763236542"><i class="fa-brands fa-whatsapp"></i></a>
-            </div> -->
+            </div>
 
             <div id="footer-center">
                 <p class="footer-center-headers yerrr1">

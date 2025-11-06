@@ -45,6 +45,16 @@ body{
     background-color: var(--primary-color);
 }
 
+.body-background{
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000059;
+    transition: .5s;
+}
+
 
 /* Fundamentals End */
 
@@ -102,9 +112,71 @@ body{
     color: #fff;
     background-color: #000;
     border-radius: 5px;
+    cursor: pointer;
 }
 
+#PAIA{
+    transition: .15s;
+}
 
+#PAIA:hover{
+    scale: 103%;
+    opacity: .8;
+}
+
+#docRequestForm{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    height: 300px;
+    background-color: #fff;
+    color: #000;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px #5F5F5F solid;
+    border-radius: 20px;
+    box-shadow: 0 10px 7px #0000003a;
+    padding: var(--inline-padding);
+    max-width: 600px;
+    z-index: 3;
+}
+
+.requestDocTopSection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.requestDocTopSection i{
+    font-size: 30px;
+}
+
+#requestFormHeader{
+    text-align: center;
+    font-size: var(--sub-header-size);
+    font-weight: bold;
+    margin: 0;
+}
+
+input{
+    font-size: inherit;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid grey;
+}
+
+#requestBTN{
+    padding-block: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
 
 

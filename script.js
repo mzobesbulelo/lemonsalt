@@ -135,7 +135,7 @@ function radioIndividual(){
       });
 
     document.querySelectorAll('.required-org').forEach(function(element) {
-        element.removeAttribute("required");
+        element.setAttribute("required", "true");
       });
 
 
@@ -148,10 +148,22 @@ function radioOrganization(){
     document.body.querySelector('.box3-div').style.display = "grid";
     
     document.querySelectorAll('.required-individual').forEach(function(element) {
-        element.removeAttribute("required");
+        element.setAttribute("required", "true");
       });
 
     document.querySelectorAll('.required-org').forEach(function(element) {
-        element.setAttribute("required", "true");
+        element.removeAttribute("required");
       });
+}
+
+// Docs Page Form
+
+function popUpForm(){
+  document.getElementById('docRequestForm').style.display = "flex";
+  document.body.querySelector('.body-background').style.display = "block"
+}
+
+function removeForm(){
+  document.getElementById('docRequestForm').style.display = "none";
+  document.body.querySelector('.body-background').style.display = "none"
 }
